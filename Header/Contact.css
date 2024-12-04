@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, black, #0090af); /* Gradient from left to right */
+    padding: 3rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 1rem; /* Adjust spacing from the left edge */
+}
+
+.logo-img {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+}
+
+.navigation .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #2fa0c8;
+}
+.logo-img{
+    width: auto;
+    height: 100px;
+    margin-top: 8px;
+}
+.main-footer {
+    background: linear-gradient(to right, black, #0090af); /* Matches header gradient */
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1 1 30%; /* Ensures sections adapt responsively */
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    color: #aad03a;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #aad03a;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #aad03a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #2fa0c8;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aad03a;
+}
+/* Section Styles */
+
+/* Hero Section (Home) */
+.hero {
+    background-image: url('your-image.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #aad03a;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2fa0c8;
+}
+
+/* About Section (Qui nous sommes) */
+.about {
+    padding: 5rem 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+.main-footer {
+    background: linear-gradient(to right, black, #0090af);
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    color: #aad03a;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #aad03a;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.social-icon:hover {
+    color: #aad03a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #2fa0c8;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aad03a;
+}
+/*text input*/
+.input-wrapper input {
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 13em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+  }
+  
+  .input-wrapper input:focus {
+    outline-color: lightcoral;
+  }

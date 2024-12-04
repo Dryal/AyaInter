@@ -1,0 +1,495 @@
+/*.hh1{
+    color: green;
+    font-size: 15px;
+}
+.hh2{
+    color: red;
+    font-size: 22px;
+}
+span
+{
+    color: purple;
+}
+.span1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.span2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.div1{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.div2{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+.div3{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 254, 254);
+}
+.divM1{
+    display: flex;
+    flex-direction: row;
+    
+}
+.divM2{
+
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+}
+.divM3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.divM4{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+}
+
+.titre{
+    text-align: center;
+    color: springgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+} */
+ /* styles.css */
+/* styles.css */
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, black, #0090af); /* Gradient from left to right */
+    padding: 3rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 1rem; /* Adjust spacing from the left edge */
+}
+
+.logo-img {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+}
+
+.navigation .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #2fa0c8;
+}
+.logo-img{
+    width: auto;
+    height: 100px;
+    margin-top: 8px;
+}
+.main-footer {
+    background: linear-gradient(to right, black, #0090af); /* Matches header gradient */
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1 1 30%; /* Ensures sections adapt responsively */
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    color: #aad03a;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #aad03a;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #aad03a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #2fa0c8;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aad03a;
+}
+/* Section Styles */
+
+/* Hero Section (Home) */
+.hero {
+    background-image: url('your-image.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #aad03a;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2fa0c8;
+}
+
+/* About Section (Qui nous sommes) */
+.about {
+    padding: 5rem 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Expertises Section */
+.expertises {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    background-color: #f4f4f4;
+}
+
+.service-item {
+    width: 30%;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #555;
+}
+/* Footer Bottom */
+.main-footer {
+    background: linear-gradient(to right, black, #0090af);
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    color: #aad03a;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #aad03a;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #aad03a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #2fa0c8;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aad03a;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        padding: 2rem;
+    }
+
+    .navigation .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .expertises {
+        flex-direction: column;
+        padding: 3rem 10%;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact .form-group {
+        width: 100%;
+    }
+}
+/* Container for both left and right sections */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the left and right sections */
+    padding: 20px;
+}
+
+/* Left section (contact info) */
+.contact-info {
+    width: 48%; /* Ensures the left side occupies 48% of the container */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for left section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h5, .contact-info h2, .contact-info span {
+    color: #333; /* Dark text for readability */
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contact-info li .elementor-icon-list-icon {
+    margin-right: 10px;
+    color: #007bff; /* Blue color for icons */
+}
+
+/* Right section (contact form) */
+.contact-form {
+    width: 48%; /* Ensures the right side occupies 48% of the container */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333; /* Dark text for headings */
+}
+
+.contact-form .wpforms-field {
+    margin-bottom: 15px;
+}
+
+.contact-form .wpforms-field-label {
+    font-weight: bold;
+    color: #555; /* Slightly lighter color for labels */
+}
+
+.contact-form .wpforms-field input,
+.contact-form .wpforms-field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form .wpforms-field textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form .wpforms-submit-container {
+    text-align: right;
+}
+
+.contact-form .wpforms-submit {
+    background-color: #007bff; /* Main blue color for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form .wpforms-submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
