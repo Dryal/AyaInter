@@ -1,0 +1,108 @@
+/* Footer Styles */
+.site-footer {
+    background: linear-gradient(to left, white, #0090af);
+    color: white;
+    padding: 1px 0;
+    font-family: Arial, sans-serif;
+    text-align: start;
+    flex-direction: row;
+}
+
+.site-footer .footer-widget-area {
+    margin-bottom: 20px;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation {
+    margin-bottom: 20px;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li {
+    margin: 0 15px;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li a {
+    color: #cfcfcf;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li a:hover {
+    color: #12ddf3;
+}
+
+.site-footer .ast-footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.site-footer .ast-footer-copyright p {
+    margin: 0;
+}
+
+.site-footer .ast-footer-copyright p a {
+    color: linear-gradient(to right, rgb(0, 0, 0), #0090af);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+;
+}
+
+.site-footer .ast-footer-copyright p a:hover {
+    color: #f39c12;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item-1183 a {
+    font-weight: bold;
+    color: #f39c12 !important;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item a {
+    color: #fff;
+}
+
+.site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item a:hover {
+    color: #f39c12;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-footer .footer-widget-area .footer-bar-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-footer .footer-widget-area .footer-bar-navigation ul li {
+        margin: 10px 0;
+    }
+}
+.site-footer-above-section-1 {
+    margin-left: 30px;
+}
