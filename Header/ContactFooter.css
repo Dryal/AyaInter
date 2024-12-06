@@ -1,6 +1,6 @@
 /* Footer Styles */
 .site-footer {
-    background: linear-gradient(to left, white, #0090af);
+    background: linear-gradient(to right, #d4ed91, #0090af);
     color: white;
     padding: 1px 0;
     font-family: Arial, sans-serif;
@@ -9,11 +9,11 @@
 }
 
 .site-footer .footer-widget-area {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .site-footer .footer-widget-area .footer-bar-navigation {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .site-footer .footer-widget-area .footer-bar-navigation ul {
@@ -32,7 +32,7 @@
 .site-footer .footer-widget-area .footer-bar-navigation ul li a {
     color: #cfcfcf;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .site-footer .ast-footer-copyright {
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 10px;
+    font-size: 12px;
 }
 
 .site-footer .ast-footer-copyright p {
@@ -65,20 +65,20 @@
 
 .site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item-1183 a {
     font-weight: bold;
-    color: #f39c12 !important;
+    color: #d4ed91 !important;  /*where you are rn*/
 }
 
 .site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item a {
-    color: #fff;
+    color: greenyellow; /*button color defgault*/
 }
 
 .site-footer .footer-widget-area .footer-bar-navigation ul li.menu-item a:hover {
-    color: #f39c12;
+    color: white; /*highlight button*/
 }
 
 .footer-bottom {

@@ -1,114 +1,141 @@
-/*.hh1{
-    color: green;
-    font-size: 15px;
-}
-.hh2{
-    color: red;
-    font-size: 22px;
-}
-span
-{
-    color: purple;
-}
-.span1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-}
-.span2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 600;
-}
-.div1{
-    width: 200px;
-    height: 200px;
-    background-color: green;
-}
-.div2{
-    width: 200px;
-    height: 200px;
-    background-color: greenyellow;
-}
-.div3{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(0, 254, 254);
-}
-.divM1{
-    display: flex;
-    flex-direction: row;
-    
-}
-.divM2{
-
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 30px;
-}
-.divM3{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-.divM4{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 30px;
-}
-
-.titre{
-    text-align: center;
-    color: springgreen;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 60px;
-    margin-bottom: 30px;
-} */
- /* styles.css */
-/* styles.css */
-/* styles.css */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.main-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, black, #0090af); /* Gradient from left to right */
-    padding: 3rem;
-    position: relative;
-}
-
-.logo {
-    position: absolute;
-    left: 1rem; /* Adjust spacing from the left edge */
-}
-
-.logo-img {
-    height: 50px; /* Adjust size as needed */
-    width: auto;
-}
-
-.navigation .nav-list {
+    padding: 0;
     list-style: none;
+    font-family: Arial, sans-serif;
+}
+/* General Reset */
+body, a, button {
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-item a {
+    font-family: Arial, sans-serif;
     text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, white, #0090af, #4aabcd); /* Gradient */
+    position: sticky; /* Prioritize navbar visibility */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styling */
+  .logo img {
+    width: 220px; /* Big Logo */
+    height: auto;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Dropdown Menus */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    background: none;
+    border: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dropbtn:hover {
+    color: #aad03a; /* Highlight color */
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.3s ease;
+    z-index: 1001;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #aad03a;
+    color: white;
+  }
+  
+  /* Show Dropdown on Hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Contact Button */
+  .contact-button {
+    background: #aad03a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-item a:hover {
-    color: #2fa0c8;
-}
+    transition: all 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background: #aad03a;
+    transform: scale(1.1); /* Button animation */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-button {
+      margin-top: 10px;
+    }
+  }
+  
 .logo-img{
     width: auto;
     height: 100px;
@@ -198,6 +225,7 @@ body {
     background-image: url('your-image.jpg'); /* Add your image path */
     background-size: cover;
     background-position: center;
+    background-color: black;
     height: 500px;
     color: white;
     display: flex;
@@ -206,6 +234,7 @@ body {
     text-align: center;
     position: relative;
     padding: 2rem;
+    margin-top: 200px;
 }
 
 .hero h1 {

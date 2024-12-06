@@ -48,7 +48,7 @@ body {
     margin-top: 8px;
 }
 .main-footer {
-    background: linear-gradient(to right, black, #0090af); /* Matches header gradient */
+    background: linear-gradient(to right, rgb(0, 0, 0), #0090af); /* Matches header gradient */
     color: white;
     padding: 2rem;
     margin-top: 3rem;

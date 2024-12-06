@@ -8,23 +8,43 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <header class="main-header">
+    <div class="navbar">
         <div class="logo">
-            <a href="#">
-                <img src="cropped-cropped-Untitled-design-2.webp" alt="Logo" class="logo-img">
-            </a>
+          <a href="#home">
+            <img src="cropped-cropped-Untitled-design-2.webp" alt="Logo" class="logo-img">
+          </a>
         </div>
-        <nav class="navigation">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="Header/quinoussommes.html">Qui Nous Sommes</a></li>
-                <li class="nav-item"><a href="#expertises">Expertises</a></li>
-                <li class="nav-item"><a href="Header/CSR.html">CSR</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-                <li class="nav-item"><a href="#english">English</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="nav-links">
+          <div class="dropdown">
+            <button class="dropbtn">Navigation
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#expertises">Expertises</a>
+              <a href="#csr">CSR</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Informations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#quinoussommes">Qui Nous Sommes</a>
+              <a href="#president">President's Word</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Langues
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#english">English</a>
+              <a href="#arabic">Arabic</a>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="contact-button">Contact</a>
+      </div>      
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Welcome to Aya Intercontinental</h1>
