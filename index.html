@@ -6,6 +6,8 @@
     <title>Abdelaziz</title>
     <link rel="stylesheet" href="./index.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <!-- Header -->
@@ -44,31 +46,57 @@
             </div>
           </div>
         </div>
-        <a href="Header/Contact.html" class="contact-button">Contact</a>
+        <button class="Buttonforcontact">
+            <a href="Header/Contact.html" class="contact-button">Contact</a>
+        </button>
       </div>  
       <!-- Hero -->    
       <section class="hero-section">
-        <section class="custom-hero">
-          <div class="custom-hero-image">
-            <img src="premium_photo-1661963559074-9655a9404f1a.jpg" alt="Logistics Img">
-          </div>
-          <div class="custom-hero-content">
-            <h1>AYA Intercontinental</h1>
-            <p>Fort de plus de 30 ans d'expertise en logistique et commerce international, AYA Intercontinental est votre partenaire de choix pour propulser votre entreprise. Implantés à Casablanca et Tanger, nous dominons le marché africain du Nord avec des solutions logistiques sur mesure. Que vous soyez confronté à des litiges commerciaux ou que vous ayez besoin d'une gestion avancée de votre chaîne d’approvisionnement, nous mettons à votre disposition des stratégies adaptées, conçues pour répondre aux défis uniques de votre secteur.</p>
-            <a href="#solutions" class="cta-button">Explore Our Solutions</a>
-          </div>
-        </section>
+        <section class="dryal-hero">
+            <div class="dryal-content">
+              <h1>AYA Intercontinental</h1>
+              <p>Chez AYA Intercontinental, avec plus de 30 ans d’expertise en logistique et commerce international, nous propulsons les entreprises grâce à un savoir-faire que peu peuvent égaler. Nous sommes stratégiquement implantés à Casablanca et Tanger, où nous avons su nous imposer comme des leaders en Afrique du Nord. Que ce soit pour des litiges commerciaux complexes ou une gestion avancée de la chaîne d’approvisionnement, nous offrons des solutions sur mesure qui répondent aux besoins uniques de chaque client. </p>
+              <a href="#solutions" class="dryal-button">Discover Our Solutions</a>
+            </div>
+          
+            <div class="dryal-image-container">
+              <img src="logo.webp" alt="Logistics Img" class="dryal-photo">
+              <div class="dryal-stats">
+                <div class="dryal-stat">
+                  <h3>3+</h3>
+                  <p>Langues maîtrisées</p>
+                </div>
+                <div class="dryal-stat">
+                  <h3>100%</h3>
+                  <p>Satisfaction client</p>
+                </div>
+                <div class="dryal-stat">
+                  <h3>30+</h3>
+                  <p>Ans d'expérience</p>
+                </div>
+              </div>
+            </div>
+          </section>               
         <!-- First Block: Centered Logo & Content -->
-        <div class="block-logo-centered">
-          <div class="logo-container">
-            <img src="logo.webp" alt="AYA Logo" class="main-logo" />
-          </div>
-          <div class="intro-text">
-            <h2>Why AYA Intercontinental?</h2>
-            <p>We specialize in resolving international trade disputes and navigating complex customs regulations with a team of highly qualified consultants.</p>
-          </div>
-        </div>
-      
+        <div class="apah">
+            <div class="logo-container">
+              <img src="logo.webp" alt="AYA Logo" class="main-logo" />
+            </div>
+            <div class="intro-text">
+              <h2>Pourquoi Choisir AYA Intercontinental ?</h2>
+            </div>
+            <div class="extra-content">
+              <div class="column">
+                <p><strong>Nos Experts:</strong> Avec une équipe de consultants hautement qualifiés, nous nous spécialisons dans la résolution de litiges commerciaux internationaux et la navigation des réglementations douanières complexes. Notre expertise couvre diverses industries, ce qui fait de nous un partenaire de confiance pour les entreprises en quête de solutions juridiques efficaces.</p>
+              </div>
+              <div class="column">
+                <p><strong>Solutions Personnalisées:</strong> Nos services sont conçus sur mesure pour répondre précisément à vos besoins uniques. Nous croyons en une approche collaborative, travaillant en étroite coordination avec vous pour élaborer des solutions logistiques qui sont parfaitement adaptées à votre entreprise.</p>
+              </div>
+              <div class="column">
+                <p><strong>Notre Engagement:</strong> Nous avons une connaissance approfondie du marché et de l’environnement réglementaire en Afrique du Nord, ce qui nous permet de relever aisément les défis logistiques complexes.</p>
+              </div>
+            </div>
+          </div>                
         <!-- Second Block: Split Sections with Images -->
         <div class="block-split">
           <div class="split-text">
@@ -78,7 +106,7 @@
             </p>
           </div>
           <div class="split-image">
-            <img src="Dark-Blue-Red-Export-Import-Service-Instagram-Post.webp" alt="Customized Solutions" />
+            <img src="logo.webp" alt="Customized Solutions" />
           </div>
         </div>
       
@@ -259,35 +287,52 @@
             </div>
         </div>
     </div>
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at neque elit.</p>
+
+    <!--Newsletter-->
+    <div class="newsletter">
+        <h4>Inscrivez-vous à notre newsletter pour les dernières mises à jour</h4>
+        <div class="input-container">
+            <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+            </svg>
+            <input type="email" class="email-input" placeholder="Enter your email" required />
+            <div class="subscribe-btn">
+                <span>Subscribe</span>
             </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="Header/Contact.html">Contact</a></li>
-                    <li><a href="Header/Expertises.html">Expertises</a></li>
-                    <li><a href="Header/CSR.html">CSR</a></li>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#home"><i class="fa fa-home"></i> Accueil</a></li>
+                    <li><a href="#expertises"><i class="fa fa-briefcase"></i> Expertises</a></li>
+                    <li><a href="#quinoussommes"><i class="fa fa-info-circle"></i> Qui Nous Sommes</a></li>
+                    <li><a href="Header/Contact.html"><i class="fa fa-phone"></i> Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Twitter</a>
-                    <a href="#" class="social-icon">LinkedIn</a>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <div class="contact-location">
+                    <h4>AYA Intercontinental - Casablanca - Tanger</h4>
+                    <p><i class="fa fa-map-marker-alt"></i> 355 Bd Med V 8ème Etage Bureau 105 - Casablanca</p>
+                    <p><i class="fa fa-phone"></i> +212 522-241571</p>
+                    <p><i class="fa fa-fax"></i> +212 522-241561</p>
+                    <p><i class="fa fa-envelope"></i> info@ayaintercontinental.com</p>
+                    <p><i class="fa fa-clock"></i> Heures d'ouverture : Lundi au vendredi : 9h00 - 17h00</p>
                 </div>
             </div>
         </div>
+    
         <div class="footer-bottom">
-            <p>&copy; 2024 YourCompany. All Rights Reserved.</p>
+            <div class="secure-lock">
+                <i class="fa fa-lock"></i> Secure & Trusted
+            </div>
+            <p>&copy; 2024 AYA Intercontinental. Tous droits réservés.</p>
         </div>
     </footer>
-    
 </body>
 
 </html>
