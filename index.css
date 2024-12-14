@@ -734,20 +734,86 @@ body {
 }
 /*BLOCK 4*/
 .block4{
-  background-color: #1e1810;
+  background: linear-gradient(to left,white,#0090af);
   width: 100%;
   height: 1000px;
   display: flex;
   justify-content: center;
 }
-.block5{
-  background: linear-gradient(to right, #ebf8d9, #ebf8d9, #0090af); /* Gradient */
+.block5 {
+  background: linear-gradient(to left, #0090af, white, #ebf8d9); /* Gradient */
   width: 1300px;
   height: 800px;
   position: relative;
   top: -150px;
- 
+  border-radius: 15px; /* Rounded corners for a polished look */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
+
+.block5split {
+  display: flex; /* Enable horizontal layout */
+  flex-direction: row; /* Ensure horizontal split */
+  height: 100%; /* Stretch to parent height */
+}
+
+.block5left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Crop the image to stay inside */
+  position: relative;
+}
+
+.block5left img {
+  width: 120%; /* Keep image responsive */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Make sure the image covers the area properly */
+  position: relative;
+  left: -50px; /* Shift the image left */
+}
+
+.block5right {
+  flex: 1; /* Equal width for both sides */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Text at the top, button at the bottom */
+  padding: 40px; /* Add some spacing */
+  text-align: left; /* Align text to the left */
+  font-family: 'Roboto', sans-serif; /* Modern and clean font */
+}
+
+.block5right h1 {
+  font-size: 2.5rem; /* Make the title bigger */
+  font-weight: bold;
+  margin-bottom: 20px; /* Spacing under the title */
+  color: #333; /* Darker text for readability */
+}
+
+.block5right p {
+  font-size: 1.2rem; /* Make the paragraph larger */
+  line-height: 1.8; /* Better readability */
+  color: #555; /* Subtle contrast for the paragraph text */
+}
+
+.dryal-button2 {
+  background-color: none;
+  border: 2px solid #0090af;
+  color: #0090af;
+  padding: 15px 40px;
+  font-size: 1.2rem; /* Bigger button text */
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* Align the button to the left */
+}
+
+.dryal-button2:hover {
+  background-color: #0090af;
+  color: #333; /* Slight text color change on hover */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .block-split {
