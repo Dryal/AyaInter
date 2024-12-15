@@ -734,11 +734,26 @@ body {
 }
 /*BLOCK 4*/
 .block4{
-  background: linear-gradient(to left,white,#0090af);
+    background: linear-gradient(270deg, #4694a6, white, #acc16e);
+  background-size: 300% 300%;
+  animation: backgroundShift 30s infinite linear;
+  background-position: 0% 50%; /* Starting position for a smooth transition */
   width: 100%;
   height: 1000px;
   display: flex;
   justify-content: center;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%; /* Midpoint to create smooth movement */
+  }
+  100% {
+    background-position: 0% 50%; /* Return to starting point for seamless loop */
+  }
 }
 .block5 {
   background: linear-gradient(to left, #0090af, white, #ebf8d9); /* Gradient */
@@ -763,6 +778,7 @@ body {
   align-items: center;
   overflow: hidden; /* Crop the image to stay inside */
   position: relative;
+  
 }
 
 .block5left img {
@@ -772,7 +788,6 @@ body {
   position: relative;
   left: -50px; /* Shift the image left */
 }
-
 .block5right {
   flex: 1; /* Equal width for both sides */
   display: flex;
@@ -805,15 +820,59 @@ body {
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  /*transition: background-color 0.3s ease;*/
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
   align-self: flex-start; /* Align the button to the left */
+  animation: pulse 2s infinite;
+  box-shadow: 0 4px 15px rgba(0, 144, 175, 0.5);
 }
 
 .dryal-button2:hover {
   background-color: #0090af;
+  box-shadow: 0 4px 15px rgba(0, 144, 175, 0.5);
   color: #333; /* Slight text color change on hover */
 }
+.textbellowblock5 {
+  display: flex; /* Enable horizontal alignment */
+  width: 100%; /* Full-width container */
+  height: 200px; /* Adjust height as needed */
+  padding: 20px; /* Add spacing */
+  box-sizing: border-box; /* Include padding in the dimensions */
+  gap: 20px; /* Space between the two text sections */
+  font-family: "Roboto", sans-serif; /* Clean, modern font */
+  margin-top: 60px;
+  animation: fadeIn5 2s ease-in;
+}
+@keyframes fadeIn5 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+/* Equal width for both text sections */
+.textright-container,
+.textleft-container {
+  flex: 1; /* Each text takes half the width */
+  display: flex;
+  text-align: start; /* Center the actual text */
+}
+
+.textright {
+  font-size: 1.8rem; /* Make the right text larger */
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.textleft {
+  font-size: 1.2rem; /* Slightly smaller for the left text */
+  line-height: 1.5;
+  color: #555;
+  margin: 0;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .block-split {
@@ -824,229 +883,134 @@ body {
     order: -1;
   }
 }
-/* Hero Section (Home) */
-.hero {
-    background-image: url('your-image.jpg'); /* Add your image path */
-    background-size: cover;
-    background-position: center;
-    background-color: black;
-    height: 500px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    padding: 2rem;
-    margin-top: 200px;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    background-color: #aad03a;
-    color: white;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #2fa0c8;
-}
-
-/* About Section (Qui nous sommes) */
-.about {
-    padding: 5rem 10%;
-    text-align: center;
-    background-color: #fff;
-}
-
-.about h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
-}
-
-/* Expertises Section */
-.expertises {
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem 10%;
-    background-color: #f4f4f4;
-}
-
-.service-item {
-    width: 30%;
-    background-color: white;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.service-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.service-item p {
-    font-size: 1.1rem;
-    color: #555;
-}
-/* Responsiveness */
-@media (max-width: 768px) {
-    .hero {
-        height: 400px;
-        padding: 2rem;
-    }
-
-    .navigation .nav-list {
-        flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-    }
-
-    .expertises {
-        flex-direction: column;
-        padding: 3rem 10%;
-    }
-
-    .service-item {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-
-    .contact .form-group {
-        width: 100%;
-    }
-}
-/* Container for both left and right sections */
+/* Contact Section */
 .contact-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Space between the left and right sections */
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  background: linear-gradient(270deg, #4694a6, white, #acc16e);
+  background-size: 300% 300%;
+  border: none; /* Remove the original border */
+  box-shadow: 0 10px 10px -10px rgba(170, 208, 58, 0.5), 
+              0 10px 20px -10px rgba(0, 144, 175, 0.5); /* Add shadow to the entire container */
 }
 
-/* Left section (contact info) */
-.contact-info {
-    width: 48%; /* Ensures the left side occupies 48% of the container */
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background for left section */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.contact-info,
+.contact-form {
+  width: 48%;
+  padding: 30px;
 }
 
-.contact-info h5, .contact-info h2, .contact-info span {
-    color: #333; /* Dark text for readability */
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 15px;
+.contact-info h5 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.6;
 }
 
 .contact-info ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-.contact-info li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 14px;
+.contact-info .elementor-icon-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.contact-info li .elementor-icon-list-icon {
-    margin-right: 10px;
-    color: #007bff; /* Blue color for icons */
+.contact-info .elementor-icon-list-icon {
+  margin-right: 15px;
+  color: #0090af;
 }
 
-/* Right section (contact form) */
 .contact-form {
-    width: 48%; /* Ensures the right side occupies 48% of the container */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form h2 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: #333; /* Dark text for headings */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #0090af;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
 }
 
-.contact-form .wpforms-field {
-    margin-bottom: 15px;
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #aad03a;
+  outline: none;
 }
 
-.contact-form .wpforms-field-label {
-    font-weight: bold;
-    color: #555; /* Slightly lighter color for labels */
+.contact-form .wpforms-field-row-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.contact-form .wpforms-field input,
-.contact-form .wpforms-field textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.contact-form .wpforms-field textarea {
-    resize: vertical;
-    height: 150px;
-}
-
-.contact-form .wpforms-submit-container {
-    text-align: right;
+.contact-form .wpforms-field-row-block input {
+  width: 40%;
+  
 }
 
 .contact-form .wpforms-submit {
-    background-color: #007bff; /* Main blue color for the button */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  background-color: #0090af;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form .wpforms-submit:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+  background-color: #aad03a;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-info, .contact-form {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+.contact-form .wpforms-submit:active {
+  background-color: #7ba62f;
 }
+
+/* Animation for the contact form */
+.contact-form input,
+.contact-form textarea {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a separator between left and right sections */
+.contact-separator {
+  width: 2px;
+  background-color: #aad03a; /* Green color for separator */
+  margin: 0 20px; /* Add some space between sections */
+}
+
+/* Optional: Add border for the entire contact section */
+.contact-info, .contact-form {
+  border: 2px solid #0090af; /* Blue border around each section */
+  border-radius: 8px;
+}
+
+
 /* FOOTER CSS */
 /* Footer Styling */
 /* Footer Styling */
