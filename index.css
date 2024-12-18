@@ -884,139 +884,12 @@ body {
   }
 }
 /* Contact Section */
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 100px;
-  background: linear-gradient(270deg, #4694a6, white, #acc16e);
-  background-size: 300% 300%;
-  border: none; /* Remove the original border */
-  box-shadow: 0 10px 10px -10px rgba(170, 208, 58, 0.5), 
-              0 10px 20px -10px rgba(0, 144, 175, 0.5); /* Add shadow to the entire container */
-}
-
-.contact-info,
-.contact-form {
-  width: 48%;
-  padding: 30px;
-}
-
-.contact-info h5 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}
-
-.contact-info ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.contact-info .elementor-icon-list-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.contact-info .elementor-icon-list-icon {
-  margin-right: 15px;
-  color: #0090af;
-}
-
-.contact-form {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 2px solid #0090af;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
-  background-color: #fff;
-  transition: border-color 0.3s ease-in-out;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #aad03a;
-  outline: none;
-}
-
-.contact-form .wpforms-field-row-block {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.contact-form .wpforms-field-row-block input {
-  width: 40%;
-  
-}
-
-.contact-form .wpforms-submit {
-  background-color: #0090af;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form .wpforms-submit:hover {
-  background-color: #aad03a;
-}
-
-.contact-form .wpforms-submit:active {
-  background-color: #7ba62f;
-}
-
-/* Animation for the contact form */
-.contact-form input,
-.contact-form textarea {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Add a separator between left and right sections */
-.contact-separator {
-  width: 2px;
-  background-color: #aad03a; /* Green color for separator */
-  margin: 0 20px; /* Add some space between sections */
-}
-
-/* Optional: Add border for the entire contact section */
-.contact-info, .contact-form {
-  border: 2px solid #0090af; /* Blue border around each section */
-  border-radius: 8px;
-}
-
-
 /* FOOTER CSS */
 /* Footer Styling */
 /* Footer Styling */
 .footer {
   background: #ebf8db;
-  padding: 50px 20px;
+  padding: 10px 10px;
   color: #333;
   border-top: 4px solid;
   border-image-source: linear-gradient(45deg, #aad03a, #0090af);
@@ -1031,14 +904,24 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: start;
+  border-bottom: 4px solid;
+  border-image-source: linear-gradient(45deg, #aad03a, #0090af);
+  border-image-slice: 1;
 }
 
 .footer-column {
-  flex: 1;
+  
+  flex: 2;
   min-width: 250px;
   margin-right: 40px;
-  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border-image-source: linear-gradient(to bottom, #aad03a, #0090af);
+  border-image-slice: 1;
+  align-items: flex-start;
 }
 
 .footer-column h3 {
@@ -1046,7 +929,7 @@ body {
   color: #0090af;
   margin-bottom: 15px;
   font-weight: bold;
-  text-align: center;
+  text-align: start;
 }
 
 .footer-column p {
@@ -1070,7 +953,6 @@ body {
   display: flex;
   align-items: center;
   padding: 5px 0;
-  justify-content: center; /* Ensure the links are centered horizontally */
 }
 
 .footer-column ul li a i {
@@ -1089,7 +971,7 @@ body {
 
 /* Footer Bottom */
 .footer-bottom {
-  text-align: center;
+  align-items: center; /* Align vertically */
   margin-top: 30px;
   font-size: 16px;
   color: #555;
@@ -1097,12 +979,19 @@ body {
 
 .footer-bottom p {
   margin: 0;
+  text-align: center;
+}
+.footer-logo{
+  height: 60px;
+  position: relative; /* Enable positioning */
+  top: -71px; /* Move the logo upwards */
 }
 
 .secure-lock {
   font-size: 20px;
   margin-bottom: 20px;
   color: #0090af;
+  text-align: center;
 }
 
 .secure-lock i {
