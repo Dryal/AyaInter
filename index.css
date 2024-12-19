@@ -266,7 +266,7 @@ body, a, button {
   /* hero */
 /* Hero Section Styling */
 .hero-section {
-  background: linear-gradient(45deg, #f9f9f9, #eaf8d7);
+  background: linear-gradient(180deg, #eaf8d7,white );
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
@@ -598,22 +598,16 @@ body, a, button {
   align-items: center;
   justify-content: center;
   margin-right: 70px;
-  border-radius: 10%;
-  border: 5px solid #aad03a; /* Cool green border */
-  box-shadow: 0 4px 10px rgba(170, 208, 58, 0.5); /* Subtle green shadow */
+  /*border-radius: 10%;
+  border: 5px solid #aad03a;  Cool green border 
+  box-shadow: 0 4px 10px rgba(170, 208, 58, 0.5); *//* Subtle green shadow */
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .split-image img {
-  width: 100%;
+  width: 140%;
   height: auto;
-  object-fit: cover;
-  transition: transform 0.8s ease;
   border-radius: 10px;
-}
-
-.block-split:hover .split-image img {
-  transform: scale(1.1);
 }
 
 
@@ -682,7 +676,7 @@ body {
 /* Paragraph and list items */
 .text-container22 p, .text-container22 ul {
   color: #656867;
-  font-size: 1.2em;
+  font-size: 0.95em;
   line-height: 1.6;
 }
 
@@ -889,11 +883,9 @@ body {
 /* Footer Styling */
 .footer {
   background: #ebf8db;
+  background: linear-gradient(180deg,white,#ebf8d9);
   padding: 10px 10px;
   color: #333;
-  border-top: 4px solid;
-  border-image-source: linear-gradient(45deg, #aad03a, #0090af);
-  border-image-slice: 1;
   font-size: 18px; /* Larger font size for the footer */
   /*text-align: center;  Centered content */
 }
@@ -906,6 +898,7 @@ body {
   margin-bottom: 30px;
   text-align: start;
   border-bottom: 4px solid;
+  border-top: 4px solid;
   border-image-source: linear-gradient(45deg, #aad03a, #0090af);
   border-image-slice: 1;
 }
@@ -1018,7 +1011,7 @@ body {
 
 /*NEWSLETTER*/
 .newsletter {
-  background-color: #ebf8d9; /* Your background color */
+  background-color: #ebf8d9;
   color: #0090af; /* Main blue for text */
   padding: 40px 20px;
   border-radius: 20px;
@@ -1031,6 +1024,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .newsletter h4 {
@@ -1122,4 +1116,134 @@ body {
   margin-top: 70px;
   color: #0090af;
   font-size: 35px;
+}
+
+/*
+QUI NOUS SOMMES
+*/
+/*
+QUI NOUS SOMMES
+*/
+/*
+QUI NOUS SOMMES
+*/
+/*
+QUI NOUS SOMMES
+*/
+/*
+QUI NOUS SOMMES
+*/
+.titreQNS {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.5rem; /* Adjust as needed */
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+  margin-right: 50rem;
+  padding-bottom: 0.5rem; /* Space between text and border */
+  border-bottom: 4px solid;
+  border-image-source: linear-gradient(45deg, #aad03a, #0090af);
+  border-image-slice: 1;
+  animation: borderAnimation 2s linear infinite;
+}
+.heroQNS2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  /*background-color: #f9f9f9; /* Optional background color */
+ /* background: linear-gradient(0deg,white,#eaf8d7);*/
+ background: none;
+ border-bottom: 4px solid;
+ border-image-source: linear-gradient(45deg, #aad03a, #0090af, #aad03a);
+ border-image-slice: 1;
+ animation: borderAnimation 2s linear infinite;
+}
+@keyframes borderAnimation {
+  0% {
+      border-image-source: linear-gradient(45deg, #aad03a, #0090af, #aad03a);
+  }
+  50%{
+     border-image-source: linear-gradient(45deg, #0090af, #aad03a, #0090af);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #aad03a, #0090af, #aad03a);   
+  }
+}
+
+.QNS2split {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+}
+
+.split-img2 {
+  position: relative;
+  flex: 1; /* Take 1 part of the available space */
+  max-width: 50%; /* Ensure image does not exceed 50% width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -60px;
+}
+
+.big-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image scales nicely */
+  border: 4px solid;
+  border-image-source: linear-gradient(45deg, #aad03a, #0090af, #aad03a);
+  border-image-slice: 1;
+  animation: borderAnimation 2s linear infinite;
+}
+
+.split-text2 {
+  position: relative;
+  left: 60px;
+  flex: 1.5; /* Take 1.5 parts of the available space */
+  max-width: 50%; /* Ensure text doesn't exceed 50% width */
+  font-family: 'Roboto', sans-serif; /* Use your desired font */
+  font-size: 16px;
+  color: #333; /* Text color */
+  line-height: 1.6;
+  overflow-y: auto; /* Scroll if content exceeds height */
+}
+.split-text2 p{
+  margin-top: 50px;
+}
+
+.heroQNS3 {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the text and image */
+  align-items: center; /* Centers items vertically */
+  padding: 50px; /* Adjust as needed for spacing */
+  background : linear-gradient(90deg,#ebf8d9,#ebf8d9,#ebf8d9);
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for the floating effect */
+  border-radius: 10px; /* Rounded corners for the floating block */
+  transition: all 0.3s ease;
+}
+.values-text {
+  width: 50%; /* Adjust the width to control how much space the text takes */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.values-text h2 {
+  margin-bottom: 20px; /* Space after title */
+}
+
+.values-text p {
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.values-image {
+  width: 40%; /* Adjust the width for the image container */
+}
+
+.values-image img {
+  width: 100%; /* Ensures the image covers its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners for the image */
 }
