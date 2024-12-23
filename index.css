@@ -1224,6 +1224,7 @@ QUI NOUS SOMMES
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for the floating effect */
   border-radius: 10px; /* Rounded corners for the floating block */
   transition: all 0.3s ease;
+  margin-bottom: 80px
 }
 .values-text {
   width: 50%; /* Adjust the width to control how much space the text takes */
@@ -1246,4 +1247,65 @@ QUI NOUS SOMMES
   width: 100%; /* Ensures the image covers its container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Optional: rounded corners for the image */
+}
+.heroQNS4{
+  margin-bottom: 200px;
+}
+.logocontainerQNS4{
+  display: flex;
+  justify-content: center;
+}
+.QNS4text{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.QNS4image{
+  width: 750px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.QSN5-team {
+  text-align: center;
+  background-color: #eaf8d7; /* background color */
+  background: linear-gradient(180deg ,#f1fae4, #f3fbe9);
+  padding: 50px 0;
+}
+
+.QSN5-team h2 {
+  color: #0090af; /* main blue */
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.QSN5-team-member {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.QSN5-team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #aad03a; /* main green */
+}
+
+.QSN5-team-member h3 {
+  color: #0090af; /* main blue */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.QSN5-team-member p {
+  color: #aad03a; /* main green */
+  font-family: 'Lato', sans-s
 }
