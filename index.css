@@ -273,6 +273,38 @@ body, a, button {
   gap: 50px;
   color: #333;
 }
+/* First Hero with the picture***/
+.dryal-11 {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.photo2 {
+  position: fixed; /* Fixed position so it doesn't scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Cover the entire section */
+  object-fit: cover; /* Make sure the image covers the area without stretching */
+  z-index: -1; /* Keep the image behind the content */
+}
+
+.Nom-1 {
+  position: absolute;
+  top: 20px; /* Space from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 36px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  z-index: 1; /* Ensures text is on top of the image */
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.6); /* Background for the text */
+  border-radius: 5px;
+}
+
 /*custom-hero*/
 /* Overall Hero Section */
 .dryal-hero {
@@ -947,7 +979,12 @@ body {
   align-items: center;
   padding: 5px 0;
 }
-
+.footer-column ul li a.active {
+  color: #aad03a; /* Active page color */
+}
+.footer-column ul li a.active i {
+  color: #aad03a;
+}
 .footer-column ul li a i {
   margin-right: 10px; /* Space between the icon and text */
   color: #0090af; /* Icon color */
