@@ -1,2 +1,1 @@
-# ProjectWebtp1
-Abdelaziz OUEDGHIRI - 2eme Annee - Groupe C
+I am creating an informative website for AYA Intercontinental to showcase its services, mission, and operations. The site will provide clear insights into the company’s activities and values, ensuring easy access to essential information.
