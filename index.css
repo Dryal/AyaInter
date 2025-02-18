@@ -95,7 +95,7 @@ body, a, button {
   max-height: 500px; /* Adjust as needed */
 }
 
-/* Media Query for Mobile */
+/* Media Query for Mobile 
 @media (max-width: 768px) {
   .burger-menu {
       display: flex;
@@ -108,7 +108,7 @@ body, a, button {
   .nav-links.mobile-visible {
       display: flex;
   }
-} 
+} */
   /* Navbar Links */
   .nav-links {
     display: flex;
@@ -247,22 +247,110 @@ body, a, button {
       transform: translateY(0);
     }
   }
-  
-  /* Media Queries for Mobile */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .nav-links {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    .contact-button {
-      margin-top: 10px;
-    }
+/* Mobile-specific styles */
+.mobilenav{
+  display: none;
+}
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navbar {
+      display: none; /* Hide desktop navbar */
   }
+
+  .mobilenav {
+    display: block; /* Show mobile navigation */
+  }
+
+  .monavc {
+    background-color: #ebf8d9;
+    color: #ebf8d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px ;
+  }
+
+  /* Mobile navbar container */
+  .mobile-navbar {
+    display: flex; /* Align items inline */
+    justify-content: space-between; /* Space out the items */
+    align-items: center;
+    padding: 10px;
+    background-color: #ebf8db;
+  }
+
+  /* Burger menu - inline with other elements */
+  .mobile-burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-burger-menu .mobile-line {
+    width: 20px;
+    height: 3px;
+    background-color: #aad03a;
+    transition: all 0.3s ease;
+  }
+
+  /* Logo - inline with other elements */
+  .mobile-logo img {
+    width: 60px;
+    height: auto;
+    padding-left: 50px;
+  }
+
+  /* Contact button - inline with other elements */
+  .mobile-contact-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 15px;
+    color: #aad03a;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .mobile-contact-button .mobile-contact-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Mobile menu - hide by default */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .mobile-menu .mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .mobile-menu .mobile-menu-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .mobile-menu .mobile-menu-links a:hover {
+    background-color: #555;
+  }
+}
+
+
   /* hero */
 /* Hero Section Styling */
 .hero-section {
@@ -273,36 +361,133 @@ body, a, button {
   gap: 50px;
   color: #333;
 }
-/* First Hero with the picture***/
-.dryal-11 {
+/* First Hero with the video***/
+.video-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 120vh; /* Increase height to make the video visible for a longer time */
   overflow: hidden;
 }
 
-.photo2 {
-  position: fixed; /* Fixed position so it doesn't scroll */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;  /* Set video to fill the full width of the screen */
+  height: 120vh; /* Increase the height to make the video visible for a longer time */
+  object-fit: cover; /* Ensures the video covers the screen without distortion */
+  z-index: -1; /* Keeps the video behind any other content */
+}
+/* Add a black overlay to make the text clearer */
+.overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Cover the entire section */
-  object-fit: cover; /* Make sure the image covers the area without stretching */
-  z-index: -1; /* Keep the image behind the content */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0; /* Place the overlay behind the text */
+}
+.content-overlay {
+  position: absolute;
+  top: 40%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* True centering */
+  text-align: center;
+  color: white; /* White text */
+  z-index: 1; /* Ensure text is on top of the video */
+}
+/* ARROW HERE */
+.arrow-wrap {
+  position:absolute;
+  z-index:1;
+  left:50%;
+  top: 100%; /* Move the arrow below the text */
+  transform: translateX(-10%);
+  margin-left:-5em;
+  background: linear-gradient(135deg, rgba(167, 207, 60, 0.7), rgba(0, 144, 175, 0.7)); /* Gradient with transparency */  
+  width:10em;
+  height:10em;
+  padding:4em 2em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow {
+  float:left;
+  position:relative;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: black transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-3.2em;
+  left:-3em;
+  width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 3em 3em 0 3em;
+border-color: #111 transparent transparent transparent;
+  -webkit-transform:rotate(360deg)
+}
+
+
+.hint {
+  position:absolute;
+  top:0.6em;
+  width:100%;
+  left:0;
+  font-size:2em;
+  font-style:italic;
+  text-align:center;
+  color:#fff;
+  opacity:0;
+}
+
+
+.arrow-wrap:hover .hint {
+  opacity:1;
+}
+
+
+  @-webkit-keyframes arrows {
+    0% { top:0; }
+    10% { top:12%; }
+    20% { top:0; }
+    30% { top:12%; }
+    40% { top:-12%; }
+    50% { top:12%; }
+    60% { top:0; }
+    70% { top:12%; }
+    80% { top:-12%; }
+    90% { top:12%; }
+    100% { top:0; }
+  }
+  
+  .arrow-wrap .arrow {
+    -webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 3s;
+  }
+/* ARROW HERE */
+.logo {
+  max-width: 300px; /* Adjust logo size */
+  margin-bottom: -10px;
 }
 
 .Nom-1 {
-  position: absolute;
-  top: 20px; /* Space from the top */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 36px;
-  color: white;
+  font-size: 70px;
   font-family: 'Arial', sans-serif;
-  z-index: 1; /* Ensures text is on top of the image */
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.6); /* Background for the text */
-  border-radius: 5px;
+  font-weight: bold;
+  background: linear-gradient(to right, #aad03a, #0090af); /* Gradient from left to right */
+  -webkit-background-clip: text; /* Makes the gradient apply to the text */
+  color: transparent; /* Makes the text color transparent so the gradient shows */
 }
 
 /*custom-hero*/

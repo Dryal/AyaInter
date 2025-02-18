@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="index.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!-- Header -->
@@ -52,20 +51,65 @@
             <div class="dropdown-content">
               <a href="#Anglais">Anglais</a>
               <a href="#Arabe">Arabe</a>
-            </div>
+              </div>
           </div>
         </div>
         <button class="Buttonforcontact">
             <a href="Header/Contact.html" class="contact-button">Contact</a>
         </button>
-      </div>  
+        </div>
+        <!-- Only mobile-specific part -->
+        <div class="mobilenav">
+          <div class="monavc">
+            <button class="mobile-burger-menu" aria-label="Toggle navigation">
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+            </button>
+  
+            <!-- Mobile Logo -->
+            <div class="mobile-logo">
+              <a href="index.html">
+                  <img src="Images/logo.webp" alt="Logo" class="mobile-logo-img">
+              </a>
+            </div>
+  
+            <!-- Contact Button (just for mobile) -->
+            <button class="mobile-contact-button">
+              <a href="Header/Contact.html" class="mobile-contact-link">Contact</a>
+            </button>  
+          </div>       
+          <!-- Mobile Menu (hidden by default) -->
+          <div class="mobile-menu">
+            <div class="mobile-menu-links">
+                <a href="Header/Expertises.html#Expertises">Expertises</a>
+                <a href="Header/CSR.html#CSR">Responsabilité Sociale</a>
+                <a href="Header/quinoussommes.html#Qui-nous-sommes">Qui Nous Sommes</a>
+                <a href="#Mot du president">Mot du Président</a>
+                <a href="#Anglais">Anglais</a>
+                <a href="#Arabe">Arabe</a>
+            </div>
+          </div>
+        </div>
       <!-- Hero -->    
-      <section class="hero-section">
-        <section class="dryal-11">
-          <img src="Images/container-ship-596083.jpg" alt="Img" class="photo2">
-          <div class="Nom-1">AYA intercontinental</div>
-        </section>
-        <section class="dryal-hero">
+      
+      <section class="video-section">
+        <div class="overlay"></div>
+        <video class="video-background" autoplay muted loop>
+          <source src="Images/23759-337232393.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="content-overlay">
+          <img src="Images/logo.webp" alt="Logo" class="logo">
+          <div class="Nom-1">AYA Intercontinental</div>
+          <a class="arrow-wrap" href="#dryal-hero">
+            <span class="arrow"></span>
+            <!--<span class="hint">scroll</span>-->
+            </a>
+        </div>
+      </section>
+        <section class="hero-section">
+        <section class="dryal-hero" id="dryal-hero">
             <div class="dryal-content">         
               <h1>AYA Intercontinental</h1>
               <p>Chez AYA Intercontinental, avec plus de 30 ans d’expertise en logistique et commerce international, nous propulsons les entreprises grâce à un savoir-faire que peu peuvent égaler. Nous sommes stratégiquement implantés à Casablanca et Tanger, où nous avons su nous imposer comme des leaders en Afrique du Nord. Que ce soit pour des litiges commerciaux complexes ou une gestion avancée de la chaîne d’approvisionnement, nous offrons des solutions sur mesure qui répondent aux besoins uniques de chaque client. </p>
@@ -245,7 +289,7 @@
         </div>
         <p>&copy; 2024 AYA Intercontinental. Tous droits réservés.</p>
       </div>
-    </footer>    
+    </footer>
 </body>
 
 </html>
