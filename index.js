@@ -1,3 +1,12 @@
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.add('active');
+}
+
+function closeSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.remove('active');
+}
 // Get elements for the burger menu and mobile menu
 const burgerMenu = document.querySelector('.mobile-burger-menu');
 const mobileMenu = document.querySelector('.mobile-menu');

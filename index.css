@@ -339,7 +339,6 @@ body, a, button {
     padding-top: 20px;
     z-index: 1000;
     overflow-y: hidden; /* Disable internal scrolling */
-
     /* Hide initially */
     opacity: 0;
     transform: translateX(-100%);
@@ -650,7 +649,9 @@ border-color: #111 transparent transparent transparent;
   padding: 10px 15px;
   border-radius: 8px;
 }
-
+.pmobile{
+  display: none;
+}
 .dryal-stat {
   text-align: left;
   color: #0090af;
@@ -689,23 +690,48 @@ border-color: #111 transparent transparent transparent;
     transform: translateX(0);
   }
 }
-
+.Mob-Im{
+  display: none;
+}
 /* Responsive Design */
+@media (max-width: 320px){
+
+}
+@media (max-width: 375px){
+  
+}
+@media (max-width: 425px){
+  
+}
 @media (max-width: 768px) {
+  .video-background{
+    display: none;
+  }
+  .Mob-Im{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Set video to fill the full width of the screen */
+    height: 120vh; /* Increase the height to make the video visible for a longer time */
+    object-fit: cover; /* Ensures the video covers the screen without distortion */
+    z-index: -1; /* Keeps the video behind any other content */
+    }
+  .logo{
+    width: 200px;
+  }
+  .video-section{
+    width: 100%;
+    height: 90vh;
+  }
+  .Nom-1{
+    font-size: 10vw
+  }
+  .arrow-wrap{
+    display: none;
+  }
   .dryal-hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .dryal-content,
-  .dryal-image-container {
-    max-width: 100%;
-  }
-
-  .dryal-stats {
-    position: static;
-    margin: 10px auto;
-    text-align: center;
+    display: none;
   }
 }
 /* Block 1: Centered Logo */
@@ -815,6 +841,39 @@ border-color: #111 transparent transparent transparent;
   }
 }
 
+@media (max-width: 425px){
+  .column{
+    min-width: 60vw;
+    margin: 0 auto; /* Center the column */
+  }
+  .column p{
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) { 
+  .main-logo {
+    width: 60vw;
+  }
+  .apah {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the blocks horizontally */
+  }
+  .apah .column {
+    width: 80%; /* Adjust the width as needed */
+    margin: 10px 0; /* Add some vertical spacing between blocks */
+  }
+  .intro-text h2 {
+    font-size: 6vw;
+    text-align: center; /* Center the text */
+  }
+  .intro-text h2::after {
+    background: none;
+  }
+  .column {
+    min-width: 60vw;
+  }
+}
 /* Animation for the Separator Line */
 @keyframes fadeInSeparator {
   0% {
@@ -874,6 +933,9 @@ border-color: #111 transparent transparent transparent;
   height: auto;
   border-radius: 10px;
 }
+.block-callout-mob{
+  display: none;
+}
 
 
 /* Block 3: Full-Width Callout */
@@ -907,6 +969,11 @@ body {
   width: 600px;
   height: auto;
   animation: zoomIn 2s ease-in-out;
+}
+@media (max-width: 784px) {
+  .center-logo{
+    width: 60vw;
+  }
 }
 
 /* Zoom-in animation for logo */
@@ -990,6 +1057,31 @@ body {
 
 .reverse {
   animation: fadeInUp 1.2s ease;
+}
+
+@media (max-width: 768px) {
+  .split-image{
+    display: none;
+  }
+  .split-text p{
+    font-size: 14px;
+  }
+  .block-callout{
+    display: none;
+  }
+  .text-container22 h2{
+    font-size: 1.5em;
+  }
+  .block-callout-mob{
+    display: block;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 4px solid;
+    border-top: 4px solid;
+    border-image-source: linear-gradient(45deg, #aad03a, #0090af);
+    border-image-slice: 1;
+    margin-bottom: 250px;
+  }
 }
 /*BLOCK 4*/
 .block4{
