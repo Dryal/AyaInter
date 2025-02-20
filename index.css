@@ -251,6 +251,12 @@ body, a, button {
 .mobilenav{
   display: none;
 }
+.overlay2{
+  display: none;
+}
+.sidebar{
+  display: none;
+}
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   .navbar {
@@ -292,7 +298,7 @@ body, a, button {
   .mobile-burger-menu .mobile-line {
     width: 20px;
     height: 3px;
-    background-color: #aad03a;
+    background-color: #cedd9f;
     transition: all 0.3s ease;
   }
 
@@ -318,35 +324,77 @@ body, a, button {
     text-decoration: none;
     color: inherit;
   }
-
-  /* Mobile menu - hide by default */
-  .mobile-menu {
+  /* Sidebar */
+  .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Hide off-screen */
+    left: 0;
     width: 250px;
+    height: 100vh;
+    background-color: rgba(213, 241, 161, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 1000;
+    overflow-y: hidden; /* Disable internal scrolling */
+
+    /* Hide initially */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  /* When showing the sidebar */
+  .sidebar.active {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 10px;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .sidebar li {
+    width: 100%;
+  }
+
+  .sidebar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .sidebar a:hover {
+    background-color: #aad03a;
+  }
+
+  .overlay2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background-color: #333;
-    transition: left 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: opacity 0.3s ease-in-out;
     z-index: 999;
   }
 
-  .mobile-menu .mobile-menu-links {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .mobile-menu .mobile-menu-links a {
-    color: white;
-    text-decoration: none;
-    margin: 10px 0;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-
-  .mobile-menu .mobile-menu-links a:hover {
-    background-color: #555;
+  .overlay2.show-overlay {
+    display: block;
   }
 }
 
