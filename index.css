@@ -1723,6 +1723,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 0px auto;
+    padding: 20px;
   }
 
   .footermob .footer-column h3 {
@@ -1858,6 +1859,11 @@ body {
     font-size: 18px;
   }
 
+}
+@media (max-width: 600px) {
+  .footermob .footer-logo {
+    height: 130px;
+  }
 }
 @media (max-width: 376px) {
   .footermob .footer-logo {
