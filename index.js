@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const stats = document.querySelectorAll('.dryal-stat2 h3');
+
+  stats.forEach(function (stat) {
+    let count = 0;
+    const target = parseInt(stat.textContent);
+    const speed = 70; // Speed of counting
+    const interval = setInterval(function () {
+      count++;
+      stat.textContent = count + '+';
+      if (count >= target) {
+        clearInterval(interval);
+      }
+    }, speed);
+  });
+});
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.classList.add('active');
