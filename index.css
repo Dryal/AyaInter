@@ -18,9 +18,9 @@ body, a, button {
   }
   
   /* Navbar Container */
-  .navbar {
-    display: flex;
-    align-items: center;
+.navbar {
+display: flex;
+  align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     border-bottom: 4px solid;
@@ -94,28 +94,11 @@ body, a, button {
 .nav-links.mobile-visible {
   max-height: 500px; /* Adjust as needed */
 }
-
-/* Media Query for Mobile 
-@media (max-width: 768px) {
-  .burger-menu {
-      display: flex;
-  }
-  .nav-links {
-      display: none;
-      width: 100%;
-      background-color: #ebf8db;
-  }
-  .nav-links.mobile-visible {
-      display: flex;
-  }
-} */
-  /* Navbar Links */
   .nav-links {
     display: flex;
     align-items: center;
     gap: 40px;
   }
-  /* Dropdown Menus */
   .dropdown {
     position: relative;
   }
@@ -131,10 +114,8 @@ body, a, button {
   }
   
   .dropbtn:hover {
-    color: #0090af; /* Highlight color */
+    color: #0090af; 
   }
-  
-  /* Dropdown Content */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -161,13 +142,9 @@ body, a, button {
     background-color: #0090af;
     color: white;
   }
-  
-  /* Show Dropdown on Hover */
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
-  /* Contact Button */
   .contact-button {
     width: 140px;
     height: auto;
@@ -235,7 +212,6 @@ body, a, button {
     border: none;
     background: transparent;
   }
-  /* Animations */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -246,7 +222,6 @@ body, a, button {
       transform: translateY(0);
     }
   }
-/* Mobile-specific styles */
 .mobilenav{
   display: none;
 }
@@ -256,14 +231,13 @@ body, a, button {
 .sidebar{
   display: none;
 }
-/* Mobile-specific styles */
 @media (max-width: 768px) {
   .navbar {
-      display: none; /* Hide desktop navbar */
+      display: none;
   }
 
   .mobilenav {
-    display: block; /* Show mobile navigation */
+    display: block;
   }
 
   .monavc {
@@ -274,17 +248,14 @@ body, a, button {
     justify-content: space-between;
     padding-left: 20px ;
   }
-
-  /* Mobile navbar container */
   .mobile-navbar {
-    display: flex; /* Align items inline */
-    justify-content: space-between; /* Space out the items */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #ebf8db;
   }
 
-  /* Burger menu - inline with other elements */
   .mobile-burger-menu {
     display: flex;
     flex-direction: column;
@@ -300,15 +271,11 @@ body, a, button {
     background-color: #aad03a;
     transition: all 0.3s ease;
   }
-
-  /* Logo - inline with other elements */
   .mobile-logo img {
     width: 60px;
     height: auto;
     padding-left: 50px;
   }
-
-  /* Contact button - inline with other elements */
   .mobile-contact-button {
     background-color: transparent;
     border: none;
@@ -323,7 +290,6 @@ body, a, button {
     text-decoration: none;
     color: inherit;
   }
-  /* Sidebar */
   .sidebar {
     position: fixed;
     top: 0;
@@ -343,8 +309,6 @@ body, a, button {
     transform: translateX(-100%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
-
-  /* When showing the sidebar */
   .sidebar.active {
       opacity: 1;
       transform: translateX(0);
@@ -397,8 +361,7 @@ body, a, button {
 }
 
 
-  /* hero */
-/* Hero Section Styling */
+/* hero */
 .hero-section {
   background: linear-gradient(180deg, #eaf8d7,white );
   padding: 60px 20px;
@@ -1316,7 +1279,6 @@ body {
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
-  /*transition: background-color 0.3s ease;*/
   transition: box-shadow 0.3s ease, background-color 0.3s ease;
   align-self: flex-start; /* Align the button to the left */
   animation: pulse 2s infinite;
@@ -1377,7 +1339,7 @@ body {
     }
   
     .block5right h1 {
-      font-size: 4vw;
+      font-size: 4.5vw;
     }
     .block5right{
       background-color: #ebf8d9;
@@ -1386,7 +1348,7 @@ body {
       border-image-slice: 1;
     }
     .block5right p {
-      font-size: 3vw;
+      font-size: 3.6vw;
     }
     .textbellowblock5{
       padding: 10px;
@@ -1453,10 +1415,7 @@ body {
 }
 
 
-/* Contact Section */
 /* FOOTER CSS */
-/* Footer Styling */
-/* Footer Styling */
 .footer {
   background: #ebf8db;
   background: linear-gradient(180deg,white,#ebf8d9);
@@ -1911,27 +1870,63 @@ QUI NOUS SOMMES
 /*
 QUI NOUS SOMMES
 */
+.qns-page .hero-section{
+  padding: 0;
+}
+/* Hero Section - Full Image Coverage */
+.heroQNS1 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;    
+  align-items: center; /* Vertically center the text */
+  text-align: center;
+  width: 100%;
+  height: 60vh; /* Full screen height */
+  color: white; /* Ensure text is visible */
+  margin-bottom: 30px; /* Add space below the hero section */
+  overflow: hidden; /* Prevent overflow of image */
+}
+
+.Mob-ImQNS {
+  position: absolute;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Make the image cover the section */
+  z-index: 0; /* Ensure image stays behind the text */
+}
+
+.heroQNS1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Full overlay */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1; /* Overlay stays behind the text */
+}
 .titreQNS {
+  position: relative;
+  display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 4.5rem; /* Adjust as needed */
   font-weight: bold;
   text-align: start;
+ /* margin-top: 20px;
   margin-bottom: 1rem;
   margin-left: 4rem;
-  margin-right: 50rem;
+  margin-right: 50rem;*/
+  margin: 0;
   padding-bottom: 0.5rem; /* Space between text and border */
   border-bottom: 4px solid;
   border-image-source: linear-gradient(45deg, #aad03a, #0090af);
   border-image-slice: 1;
   animation: borderAnimation 2s linear infinite;
+  z-index: 2;
 }
 .heroQNS2 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  /*background-color: #f9f9f9; /* Optional background color */
- /* background: linear-gradient(0deg,white,#eaf8d7);*/
  background: none;
  border-bottom: 4px solid;
  border-image-source: linear-gradient(45deg, #aad03a, #0090af, #aad03a);
@@ -2086,4 +2081,147 @@ QUI NOUS SOMMES
 .QSN5-team-member p {
   color: #aad03a; /* main green */
   font-family: 'Lato', sans-s
+}
+.H22{
+  display: none;
+}
+@media (max-width: 1024px) {
+  .H22{
+    display: block;
+  }
+  .H21{
+    display: none;
+  }
+  .QNS4text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .QNS2split {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .split-img2 {
+    max-width: 100%;
+    left: 0;
+  }
+
+  .split-text2 {
+    max-width: 90%;
+    left: 0;
+  }
+
+  .heroQNS3 {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .values-text,
+  .values-image {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .QSN5-team-member {
+    width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .H22{
+    display: block;
+  }
+  .H21{
+    display: none;
+  }
+  .hero-section{
+    gap: 20px;
+  }
+  .titreQNS {
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+
+  .heroQNS2 {
+    padding: 20px;
+  }
+
+  .split-img2 {
+    max-width: 100%;
+  }
+
+  .split-text2 {
+    font-size: 14px;
+  }
+
+  .heroQNS3 {
+    padding: 20px;
+  }
+
+  .QNS4image {
+    width: 100%;
+  }
+
+  .QSN5-team h2 {
+    font-size: 2rem;
+  }
+
+  .QSN5-team-member {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .H22{
+    display: block;
+  }
+  .H21{
+    display: none;
+  }
+  .titreQNS {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .split-text2 {
+    font-size: 13px;
+  }
+  .Mob-ImQNS {
+    height: 30vh; /* Allow image height to be auto */
+  }
+
+  .heroQNS1 {
+    height: 30vh; /* Reduce the hero section height */
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .heroQNS1::before{
+    height: 100%;
+  }
+
+  .titreQNS {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .heroQNS3 {
+    padding: 15px;
+  }
+
+  .QSN5-team-member {
+    width: 130px;
+  }
+
+  .QSN5-team-member img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 320px){
+  .titreQNS{
+    font-size: 1.8rem;
+  }
 }
