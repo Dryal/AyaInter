@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Images/logo.webp">
+    <title>AYA Intercontinental</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Images/cropped-cropped-Untitled-design-2.webp" alt="Logo" class="logo-img">
+          </a>
+        </div>
+        <button class="burger-menu" aria-label="Toggle navigation">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="nav-links">
+          <div class="dropdown">
+            <button class="dropbtn">Navigation
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Expertises.html">Expertises</a>
+              <a href="CSR.html">Responsabilité Sociale</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Informations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="quinoussommes.html">Qui Nous Sommes</a>
+              <a href="#Mot du president">Mot du Président</a>
+              <a href="#FAQ">FAQ</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Langues
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#Anglais">Anglais</a>
+              <a href="#Arabe">Arabe</a>
+              </div>
+          </div>
+        </div>
+        <button class="Buttonforcontact">
+            <a href="Contact.html" class="contact-button">Contact</a>
+        </button>
+        </div>
+        <div class="mobilenav">
+          <div class="monavc">
+            <button onclick=showSidebar() class="mobile-burger-menu" aria-label="Toggle navigation">
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+            </button>
+            <div class="mobile-logo">
+              <a href="index.html">
+                  <img src="Images/logo.webp" alt="Logo" class="mobile-logo-img">
+              </a>
+            </div>
+            <button class="mobile-contact-button">
+              <a href="Contact.html" class="mobile-contact-link">Contact</a>
+            </button>  
+          </div>
+        </div>
+        <div class="sidebar">
+          <button onclick=closeSidebar() class="close-btn">&times;</button>
+          <ul>
+              <li><a href="#">Expertises</a></li>
+              <li><a href="#">Responsabilité Sociale</a></li>
+              <li><a href="#">Qui Nous Sommes</a></li>
+              <li><a href="#">Mot du President</a></li>
+              <li><a href="#">CSR</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Anglais</a></li>
+              <li><a href="#">Arabe</a></li>
+          </ul>
+        </div>
+        <div class="overlay2"></div>
+    <!-- Header -->
+    <footer class="footer">
+      <div class="newsletter">
+        <h4>Inscrivez-vous à notre newsletter pour les dernières mises à jour</h4>
+        <div class="input-container">
+            <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+            </svg>
+            <input type="email" class="email-input" placeholder="Enter your email" required />
+            <div class="subscribe-btn">
+                <span>Subscribe</span>
+            </div>
+        </div>
+    </div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <div class="contact-location">
+            <h4>AYA Intercontinental - Casablanca - Tanger</h4>
+            <p><i class="fa fa-map-marker-alt"></i> 355 Bd Med V 8ème Etage Bureau 105 - Casablanca</p>
+            <p><i class="fa fa-phone"></i> +212 522-241571</p>
+            <p><i class="fa fa-fax"></i>    +212 522-241561</p>
+            <p><i class="fa fa-envelope"></i>   info@ayaintercontinental.com</p>
+            <p><i class="fa fa-clock"></i>   Heures d'ouverture : Lundi au vendredi : 9h00 - 17h00</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="index.html" class="active"><i class="fa fa-home"></i> Accueil</a></li>
+            <li><a href="Expertises.html"><i class="fa fa-briefcase"></i> Expertises</a></li>
+            <li><a href="quinoussommes.html"><i class="fa fa-info-circle"></i> Qui Nous Sommes</a></li>
+            <li><a href="Contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="secure-lock">
+          <i class="fa fa-lock"></i> Secure & Trusted
+        </div>
+        <p>&copy; 2025 AYA Intercontinental. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <footer class="footermob">
+      <div class="footer-logo-container">
+      </div>
+      <div class="footer-column">
+        <img src="Images/Long_logo.webp" alt="" class="footer-logo">
+        <p><i class="fa fa-map-marker-alt"></i> 355 Bd Med V 8ème Etage Bureau 105 - Casablanca</p>
+        <p><i class="fa fa-phone"></i> +212 522-241571</p>
+        <p><i class="fa fa-fax"></i>    +212 522-241561</p>
+        <p><i class="fa fa-envelope"></i>   info@ayaintercontinental.com</p>
+        <p><i class="fa fa-clock"></i>   Heures d'ouverture : Lundi au vendredi : 9h00 - 17h00</p>
+      </div>
+      <div class="footer-column">
+        <h3>Liens rapides</h3>
+        <ul>
+          <li><a href="index.html" class="active"><i class="fa fa-home"></i> Accueil</a></li>
+          <li><a href="Expertises.html"><i class="fa fa-briefcase"></i> Expertises</a></li>
+          <li><a href="quinoussommes.html"><i class="fa fa-info-circle"></i> Qui Nous Sommes</a></li>
+          <li><a href="Contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h4>Restons en contact !</h4>
+        <div class="input-container">
+          <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+          </svg>
+          <input type="email" class="email-input" placeholder="Enter your email">
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AYA Intercontinental. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>
