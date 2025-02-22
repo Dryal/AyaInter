@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body class="contact-page">
     <!-- Header -->
     <div class="navbar">
         <div class="logo">
@@ -80,18 +80,84 @@
         <div class="sidebar">
           <button onclick=closeSidebar() class="close-btn">&times;</button>
           <ul>
-              <li><a href="#">Expertises</a></li>
-              <li><a href="#">Responsabilité Sociale</a></li>
-              <li><a href="#">Qui Nous Sommes</a></li>
-              <li><a href="#">Mot du President</a></li>
-              <li><a href="#">CSR</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="expertises.html">Expertises</a></li>
+              <li><a href="csr.html">Responsabilité Sociale</a></li>
+              <li><a href="quinoussommes.html">Qui Nous Sommes</a></li>
+              <li><a href="motdupresident.html">Mot du President</a></li>
+              <li><a href="faq.html">FAQ</a></li>
               <li><a href="#">Anglais</a></li>
               <li><a href="#">Arabe</a></li>
           </ul>
         </div>
         <div class="overlay2"></div>
-    <!-- Header -->
+
+        <div class="heroQNS1">
+            <img src="Images/port-7214106.jpg" alt="Img Img Img" class="Mob-ImQNS" >
+            <h1 class="titreQNS">Contact</h1>    
+        </div>
+        <section class="hero-section">
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="post" class="contact-left">
+                    <div class="contact-left-title">
+                        <p>Si vous avez des interrogations, des requêtes, ou si vous souhaitez discuter de vos besoins logistiques avec nous, n'hésitez pas à remplir le contact ci-dessous. Notre équipe s'engage à répondre rapidement et à vous fournir toute l'assistance nécessaire.</p>
+                    </div>
+                    <input type="hidden" name="access_key" value="01d79782-38ff-4bd1-8786-a5f540d4006a">
+                    <input type="text" name="First Name" placeholder="Prénom" class="contact-inputs" required>
+                    <input type="text" name="Name" placeholder="Nom" class="contact-inputs" required>
+                    <input type="email" name="Email" placeholder="Email" class="contact-inputs" required>
+                    <input type="text" name="Object" placeholder="Objet" class="contact-inputs" required>
+                    <textarea name="Message" placeholder="Message" class="contact-inputs" cols="30" rows="10"></textarea>
+                    <button type="submit">Soumettre <img src="Images/arrow_icon.png" alt=""></button>
+                </form>
+              <div class="contact-right">
+                    <h1>Nous sommes là pour vous aider !</h1>
+                    <p>Découvrez comment notre équipe d'experts peut répondre à vos besoins et vous offrir des solutions personnalisées pour votre entreprise.</p>
+                
+                    <div class="contact-info">
+                        <!-- Casablanca -->
+                        <div class="contact-item title">
+                            <h2 class="titreAA">AYA Intercontinental - Casablanca</h2>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>355 Bd Med V 8ème Etage Bureau 105 - Casablanca</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+212 522-241571</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-fax"></i>
+                            <p>+212 522-241561</p>
+                        </div>
+                
+                        <!-- Tanger -->
+                        <div class="contact-item title">
+                            <h2 class="titreAA">AYA Intercontinental - Tanger</h2>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+212 522-241571</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-fax"></i>
+                            <p>+212 522-241561</p>
+                        </div>
+                
+                        <!-- Horaires -->
+                        <div class="contact-item centered">
+                            <i class="fas fa-clock"></i>
+                            <h2 class="titreAA">Heures d'ouverture : Lundi au vendredi : 9h00 - 17h00</h2>
+                        </div>
+                    </div>
+                
+                    <p class="contact-footer">
+                        Nous accueillons avec enthousiasme toutes vos demandes et sommes impatients de vous aider à répondre à vos besoins logistiques en Afrique du Nord, notamment à Casablanca et à Tanger. N'hésitez pas à nous contacter, notre équipe dévouée se fera un plaisir de vous assister rapidement.
+                    </p>
+                </div>
+                
+        </div>
+        </section>        
     <footer class="footer">
       <div class="newsletter">
         <h4>Inscrivez-vous à notre newsletter pour les dernières mises à jour</h4>
@@ -169,4 +235,5 @@
       </div>
     </footer>
 </body>
+
 </html>
