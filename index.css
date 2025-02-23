@@ -2708,3 +2708,141 @@ QUI NOUS SOMMES
 .csr-page .QNS4text{
   font-size: 15px;
 }
+/* General Styling for CBlock */
+.CBlock {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between blocks */
+  align-items: center; /* Vertically align items */
+  gap: 20px; /* Space between blocks */
+  padding: 5%;
+  border: 5px solid #aad03a;
+  flex-wrap: wrap; /* Allow blocks to wrap on smaller screens */
+}
+.CBlock-title{
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.CBlock-title p{
+  font-size: 20px;
+  color: #666;
+}
+.CBlock-title h2{
+  font-size: 40px;
+}
+/* CBlock-1, CBlock-2, and CBlock-3 */
+.CBlock-1, .CBlock-2, .CBlock-3 {
+  flex: 1; /* Flex each block to take equal width */
+  min-width: 300px; /* Minimum width to maintain layout on small screens */
+  display: flex;
+  flex-direction: column; /* Stack items inside each block */
+  justify-content: center;
+  align-items: center;
+}
+
+/* CBlock-1 and CBlock-3 Lists */
+.CBlock-1 ul, .CBlock-3 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.CBlock-1 li, .CBlock-3 li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.CBlock-1 li h3, .CBlock-3 li h3 {
+  font-size: 1.8vw; /* Scalable title size */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.CBlock-1 li p, .CBlock-3 li p {
+  font-size: 1.2rem; /* Scalable paragraph font */
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Icons Styling */
+.CBlock-1 li i, .CBlock-3 li i {
+  font-size: 3vw; /* Icon size adjusts based on screen */
+  color: #aad03a;
+}
+
+/* CBlock-2 (Image Section) */
+.CBlock-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners */
+}
+.CBlock-1{
+  text-align: end;
+
+}
+.image-wrapper img {
+  width: 100%;
+  max-width: 400px; /* Limit max width of image */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .CBlock {
+    flex-direction: column; /* Stack blocks vertically on small screens */
+  }
+
+  .CBlock-1, .CBlock-2, .CBlock-3 {
+    width: 100%; /* Take full width on mobile */
+    min-width: unset;
+  }
+
+  .CBlock-1 li i, .CBlock-3 li i {
+    font-size: 8vw; /* Larger icons on mobile */
+  }
+
+  .CBlock-1 li h3, .CBlock-3 li h3 {
+    font-size: 5vw; /* Larger title on mobile */
+  }
+
+  .CBlock-1 li p, .CBlock-3 li p {
+    font-size: 4vw; /* Larger text on mobile */
+  }
+
+  .image-wrapper img {
+    max-width: 90%; /* Make image fit better on mobile */
+  }
+}
+
+/* For Larger Screens (Above 1024px) */
+@media (min-width: 1024px) {
+  .CBlock-1, .CBlock-2, .CBlock-3 {
+    width: 30%; /* Reduce width to give more space between blocks */
+  }
+
+  .CBlock-1 li i, .CBlock-3 li i {
+    font-size: 2vw; /* Adjust icon size for large screens */
+  }
+
+  .CBlock-1 li h3, .CBlock-3 li h3 {
+    font-size: 1.5vw; /* Adjust title font size for large screens */
+  }
+
+  .CBlock-1 li p, .CBlock-3 li p {
+    font-size: 1.2rem; /* Adjust paragraph font size */
+  }
+}
