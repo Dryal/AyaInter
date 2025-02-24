@@ -2728,9 +2728,13 @@ QUI NOUS SOMMES
 .CBlock-title p{
   font-size: 20px;
   color: #666;
+  line-height: 1.2;
+  word-wrap: break-word; /* Prevent overflow */
+
 }
 .CBlock-title h2{
   font-size: 40px;
+  color: #7a9e2d;
 }
 /* CBlock-1, CBlock-2, and CBlock-3 */
 .CBlock-1, .CBlock-2, .CBlock-3 {
@@ -2744,12 +2748,11 @@ QUI NOUS SOMMES
 
 /* CBlock-1 and CBlock-3 Lists */
 .CBlock-1 ul, .CBlock-3 ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove bullet points */
   padding: 0;
   margin: 0;
   margin-top: 50px;
 }
-
 .CBlock-1 li, .CBlock-3 li {
   display: flex;
   flex-direction: column;
@@ -2776,30 +2779,33 @@ QUI NOUS SOMMES
 
 /* CBlock-2 (Image Section) */
 .CBlock-2 {
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
 .image-wrapper {
+  position: absolute; /* Enable absolute positioning within */
   max-width: 100%;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px; /* Rounded corners */
+  height: 100%; /* Ensure it takes up full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.CBlock-1{
+.CBlock-1 {
   text-align: end;
-
 }
+
 .image-wrapper img {
-  width: 100%;
-  max-width: 400px; /* Limit max width of image */
+  
+  width: 100%; /* Make the logo take up full width */
+  max-width: 400px; /* Limit max width of logo */
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border: 2px solid #7a9e2d;
 }
 
 /* Media Queries for Responsiveness */
@@ -2851,7 +2857,7 @@ QUI NOUS SOMMES
 .CBlockM{
   width: 100%;
   height: 40%;
-  background-color: #d5f1a1;
+  background: linear-gradient(90deg,#0090af,#d5f1a1,#d5f1a1,#d5f1a1,#d5f1a1,#d5f1a1,#d5f1a1,#d5f1a1,#0090af);
   padding-bottom: 44px ;
   /*padding-top: ;*/
 }
@@ -2861,18 +2867,39 @@ QUI NOUS SOMMES
   flex-direction: column;
   font-size: 31px;
   font-weight: bold;
+  color: #0090af;
 }
 
 .CBlock2-title h1 {
   text-align: center;
 }
 .CBlock2 {
+  list-style-type: none; /* Remove bullet points */
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20px ;
+}
+.CBlock2 ul{
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;
+}
+.CBlock2 li{
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon-img{
+  filter: invert(34%) sepia(73%) saturate(1628%) hue-rotate(163deg) brightness(95%) contrast(102%);
+  list-style-type: none; /* Remove bullet points */
+  width: 70px; /* Set a size for the image */
+  height: 70px; /* Ensure it's square or maintain aspect ratio */
+  margin-bottom: 10px; /* Add space between icon and text */
+  object-fit: cover; /* Ensure the image covers the space well */
 }
 
 
@@ -2890,6 +2917,7 @@ QUI NOUS SOMMES
   background: #eaf8d7 ;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
 }
 .CBlock2-1,
 .CBlock2-2{
@@ -2902,7 +2930,12 @@ QUI NOUS SOMMES
 }
 .CBlock2 h2{
   font-size: 40px;
-  color: #333;
+  color: #7a9e2d;
+  margin: 20px 0;
+}
+.CBlock2-1 h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .CBlock2 .div {
   display: flex;
@@ -2914,4 +2947,106 @@ QUI NOUS SOMMES
   padding: 10px;
   width: 100%; /* Adjust width as needed */
   margin: 5px auto; /* Centers horizontally */
+}
+@media (max-width: 768px) {
+  .CBlock {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 5%;
+  }
+
+  .CBlock-1, .CBlock-2, .CBlock-3 {
+    width: 100%;
+    min-width: unset;
+    text-align: center;
+  }
+
+  .CBlock-1 ul, .CBlock-3 ul {
+    margin-top: 20px;
+  }
+
+  .CBlock-1 li, .CBlock-3 li {
+    align-items: center;
+  }
+
+  .CBlock-1 li i, .CBlock-3 li i {
+    font-size: 10vw;
+  }
+
+  .CBlock-1 li h3, .CBlock-3 li h3 {
+    font-size: 6vw;
+  }
+
+  .CBlock-1 li p, .CBlock-3 li p {
+    font-size: 4vw;
+  }
+
+  .image-wrapper img {
+    max-width: 80%;
+    border-width: 1px;
+  }
+
+  .CBlockM {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .CBlock2 {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .CBlock2-1, .CBlock2-2, .CBlock2-3 {
+    width: 85%;
+    height: auto;
+    padding: 25px;
+    border: 2px solid #d5f1a1;
+  }
+
+  .CBlock2 p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .icon-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .CBlock {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 3%;
+  }
+
+  .CBlock-1, .CBlock-2, .CBlock-3 {
+    width: 48%;
+  }
+
+  .CBlock-2 {
+    justify-content: center;
+  }
+
+  .CBlock2-1, .CBlock2-2, .CBlock2-3 {
+    width: 30%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .CBlock2 p {
+    font-size: 18px;
+  }
+
+  .CBlock2 h2 {
+    font-size: 35px;
+  }
+
+  .icon-img {
+    width: 65px;
+    height: 65px;
+  }
 }
