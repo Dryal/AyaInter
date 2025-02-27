@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Images/logo.webp">
+    <title>AYA Intercontinental</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="/Images/cropped-cropped-Untitled-design-2.webp" alt="Logo" class="logo-img">
+          </a>
+        </div>
+        <button class="burger-menu" aria-label="Toggle navigation">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="nav-links">
+          <div class="dropdown">
+            <button class="dropbtn">Navigation
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="expertises.html">Expertises</a>
+              <a href="CSR.html">Responsabilité Sociale</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Informations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="quinoussommes.html">Qui Nous Sommes</a>
+              <a href="motdupresident.html">Mot du Président</a>
+              <a href="FAQ.html">FAQ</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Langues
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="en/home.html">Anglais</a>
+              <a href="ar/home.html">Arabe</a>
+              </div>
+          </div>
+        </div>
+        <button class="Buttonforcontact">
+            <a href="contact.html" class="contact-button">Contact</a>
+        </button>
+        </div>
+        <div class="mobilenav">
+          <div class="monavc">
+            <button onclick=showSidebar() class="mobile-burger-menu" aria-label="Toggle navigation">
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+            </button>
+            <div class="mobile-logo">
+              <a href="index.html">
+                  <img src="/Images/logo.webp" alt="Logo" class="mobile-logo-img">
+              </a>
+            </div>
+            <button class="mobile-contact-button">
+              <a href="contact.html" class="mobile-contact-link">Contact</a>
+            </button>  
+          </div>
+        </div>
+        <div class="sidebar">
+          <button onclick=closeSidebar() class="close-btn">&times;</button>
+          <ul>
+              <li><a href="expertises.html">Expertises</a></li>
+              <li><a href="CSR.html">Responsabilité Sociale</a></li>
+              <li><a href="quinoussommes.html">Qui Nous Sommes</a></li>
+              <li><a href="motdupresident.html">Mot du President</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="en/home.html">Anglais</a></li>
+              <li><a href="ar/home.html">Arabe</a></li>
+          </ul>
+        </div>
+        <div class="overlay2"></div>
+      <!-- Hero -->    
+      
+      <section class="video-section">
+        <div class="overlay"></div>
+        <video class="video-background" autoplay muted loop>
+          <source src="/Images/23759-337232393.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <img src="/Images/vessel-2091454.jpg" alt="Img Img Img" class="Mob-Im" >
+
+        <div class="content-overlay">
+          <img src="/Images/logo.webp" alt="Logo" class="logo">
+          <div class="Nom-1" >AYA Intercontinental</div>
+          
+          <a class="arrow-wrap" href="#dryal-hero" data-aos="fade-up">
+            <span class="arrow"></span>
+            </a>
+        </div>
+      </section>
+        <section class="hero-section">
+        <section class="dryal-hero" id="dryal-hero">
+            <div class="dryal-content">
+              <!-- <img src="Images/logo.webp" alt="Img" class="dryal-logo-mob"> Logo -->    
+              <h1>AYA Intercontinental</h1>
+              <p>Chez AYA Intercontinental, avec plus de 30 ans d’expertise en logistique et commerce international, nous propulsons les entreprises grâce à un savoir-faire que peu peuvent égaler. Nous sommes stratégiquement implantés à Casablanca et Tanger, où nous avons su nous imposer comme des leaders en Afrique du Nord. Que ce soit pour des litiges commerciaux complexes ou une gestion avancée de la chaîne d’approvisionnement, nous offrons des solutions sur mesure qui répondent aux besoins uniques de chaque client. </p>
+              <a href="expertises.html" class="dryal-button">Découvrir plus !</a>
+            </div>
+          
+            <div class="dryal-image-container">
+              <img src="/Images/logo.webp" alt="Logistics Img" class="dryal-photo">
+              <div class="dryal-stats">
+                <div class="dryal-stat">
+                  <h3>3+</h3>
+                  <p>Langues maîtrisées</p>
+                  <p class="pmobile">Une équipe multilingue compétente en arabe, anglais et français pour une communication efficace.</p>
+                </div>
+                <div class="dryal-stat">
+                  <h3>100%</h3>
+                  <p>Satisfaction client</p>
+                  <p class="pmobile">Un taux de satisfaction client élevé et une expérience réussie dans de nombreux projets.</p>
+                </div>
+                <div class="dryal-stat">
+                  <h3>30+</h3>
+                  <p>Ans d'expérience</p>
+                  <p class="pmobile">Plus de 30 ans d’expérience cumulée en logistique internationale et en conseil douanier.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="dryalmobblock">
+            <div class="dryal-stat2">
+              <h3>3+</h3>
+              <p>Langues maîtrisées</p>
+              <p class="pmobile">Une équipe multilingue compétente en arabe, anglais et français pour une communication efficace.</p>
+            </div>
+            <div class="dryal-stat2">
+              <h3>100%</h3>
+              <p>Satisfaction client</p>
+              <p class="pmobile">Un taux de satisfaction client élevé et une expérience réussie dans de nombreux projets.</p>
+            </div>
+            <div class="dryal-stat2">
+              <h3>30+</h3>
+              <p>Ans d'expérience</p>
+              <p class="pmobile">Plus de 30 ans d’expérience cumulée en logistique internationale et en conseil douanier.</p>
+            </div>
+          </div>              
+        <!-- First Block: Centered Logo & Content -->
+        <div class="apah">
+            <div class="logo-container">
+              <img src="/Images/logo.webp" alt="AYA Logo" class="main-logo" />
+            </div>
+            <div class="intro-text">
+              <h2>Pourquoi Choisir AYA Intercontinental ?</h2>
+            </div>
+            <div class="extra-content">
+              <div class="column">
+                <p><strong>Nos Experts:</strong> Avec une équipe de consultants hautement qualifiés, nous nous spécialisons dans la résolution de litiges commerciaux internationaux et la navigation des réglementations douanières complexes. Notre expertise couvre diverses industries, ce qui fait de nous un partenaire de confiance pour les entreprises en quête de solutions juridiques efficaces.</p>
+              </div>
+              <div class="column">
+                <p><strong>Solutions Personnalisées:</strong> Nos services sont conçus sur mesure pour répondre précisément à vos besoins uniques. Nous croyons en une approche collaborative, travaillant en étroite coordination avec vous pour élaborer des solutions logistiques qui sont parfaitement adaptées à votre entreprise.</p>
+              </div>
+              <div class="column">
+                <p><strong>Notre Engagement:</strong>Nous avons une connaissance approfondie du marché et de l’environnement réglementaire en Afrique du Nord, ce qui nous permet de relever aisément les défis logistiques complexes. Bien que solidement ancrés en Afrique du Nord, notre vaste réseau mondial garantit que nous pouvons fournir des solutions logistiques partout où votre entreprise vous mène. Grâce à notre expertise et à notre engagement, nous vous permettons de gagner un temps précieux et de rationaliser l’utilisation de vos ressources, vous laissant ainsi libre de vous concentrer sur la croissance et le succès de votre entreprise.</p>
+              </div>
+            </div>
+          </div>                
+        <!-- Second Block: Split Sections with Images -->
+        <div class="block-split">
+          <div class="split-text">
+            <h1 class="Grandtitre">À Propos de Nous</h1>
+            <p class="paragraph11">
+              Chez AYA Intercontinental, nous comprenons les défis complexes auxquels sont confrontées les entreprises. Avec une solide présence dans les villes stratégiques de Casablanca et de Tanger, nous nous sommes imposés comme un leader dans la fourniture de solutions logistiques. Notre parcours repose sur des décennies d’expérience et un engagement indéfectible envers l’excellence opérationnelle.
+            </p>
+
+            <h2 class="titreblock">Nos Services</h2>
+            <p class="paragraph12">Découvrez comment notre gamme complète de services logistiques peut optimiser vos opérations et faire progresser votre entreprise. Nos services comprennent la gestion de la chaîne d’approvisionnement, les solutions douanières avancées, le transport de marchandises, l’entreposage, la distribution et la gestion de projet.</p>
+
+            <h2 class="titreblock">Expérience</h2>
+            <p class="paragraph12">Notre équipe dévouée de professionnels de la logistique est prête à répondre aux besoins diversifiés de nos clients, en proposant des solutions qui couvrent l’ensemble du spectre logistique, de la gestion de la chaîne d’approvisionnement à l’expertise douanière. Nous nous engageons à être votre partenaire de confiance, soutenant la croissance et le succès de vos opérations en Afrique du Nord et au-delà.</p>
+
+          </div>
+          <div class="split-image">
+            <img src="/Images/Dark-Blue-Red-Export-Import-Service-Instagram-Post.webp" alt="Customized Solutions" />
+          </div>
+        </div>
+        <!-- Third Block: Full-Width Callout Section -->
+        <div class="block-callout">
+          <div class="text-container22">
+            <div class="logo-container">
+              <img src="/Images/Long_logo.webp" alt="longlogo" class="center-logo">
+            </div>
+              <h2>Nos Valeurs</h2>
+              <p>
+                  Chez AYA Intercontinental, notre philosophie repose sur un engagement envers l’excellence, l’intégrité et la centration sur le client. Nous croyons que la quête de la justice dans les domaines du commerce international et de la douane exige un dévouement inébranlable, une compréhension profonde de la dynamique du commerce mondial et un engagement inlassable à respecter les normes éthiques les plus élevées. Notre équipe de consultants expérimentés est guidée par les valeurs fondamentales suivantes :
+              </p>
+              <ul>
+                  <li><strong>1. Excellence :</strong> Nous aspirons en permanence à l’excellence dans tous les aspects de notre travail, en fournissant à nos clients des services juridiques de la plus haute qualité adaptés à leurs besoins spécifiques.</li>
+                  <li><strong>2. Intégrité :</strong> Nous maintenons les normes éthiques les plus élevées, en garantissant l’honnêteté, la transparence et la responsabilité dans toutes nos interactions et décisions.</li>
+                  <li><strong>3. Centrage sur le Client :</strong> Nos clients sont au cœur de tout ce que nous faisons. Nous donnons la priorité à leur succès et à leur bien-être, en travaillant sans relâche pour fournir des résultats qui dépassent leurs attentes.</li>
+                  <li><strong>4. Expertise :</strong> Nous mettons à profit notre connaissance approfondie du droit du commerce international et des réglementations douanières pour proposer des solutions innovantes et efficaces aux défis juridiques complexes.</li>
+                  <li><strong>5. Collaboration :</strong> Nous croyons en la puissance de la collaboration et du travail d’équipe. En mettant en commun nos connaissances et notre créativité collectives, nous offrons des conseils juridiques complets et stratégiques.</li>
+                  <li><strong>6. Perspective Mondiale :</strong> Dans un marché mondial en évolution rapide, nous offrons une perspective mondiale, aidant nos clients à naviguer en toute confiance dans les complexités du commerce international.</li>
+              </ul>
+          </div>
+      </div>
+      <div class="block-callout-mob">
+        <h2>Nos Valeurs</h2>
+           <p>
+            Chez AYA Intercontinental, nous nous engageons à l’excellence, l’intégrité et un service client optimal. Nous offrons une expertise pointue en commerce international et douane, avec un strict respect des normes éthiques.          </p>
+        <div class="values-grid">
+          <div class="value-block">Excellence<br><span>Qualité et rigueur</span></div>
+          <div class="value-block">Intégrité<br><span>Honnêteté & transparence</span></div>
+          <div class="value-block">Client<br><span>Leur succès, notre priorité</span></div>
+          <div class="value-block">Expertise<br><span>Solutions efficaces</span></div>
+          <div class="value-block">Collaboration<br><span>Travail d’équipe</span></div>
+          <div class="value-block">Mondial<br><span>Vision internationale</span></div>
+        </div>  
+      </div>
+          
+      
+      <!--Start Here -->
+
+      <div class="clearfix">
+        <div class="block4">
+          <div class="block5">
+            <div class="block5split">
+              <div class="block5left">
+                <img src="/Images/startup-594090.jpg" alt="Team Img" />
+              </div>
+              <div class="block5right">
+                <h1>Notre équipe s'engage à vous fournir des réponses rapides à vos demandes.</h1>
+                <p>
+                  Nous sommes ravis de recevoir vos demandes et de vous aider avec vos besoins
+                  logistiques en Afrique du Nord, notamment à Casablanca et à Tanger. N'hésitez pas
+                  à nous contacter en utilisant les informations fournies, et notre équipe
+                  dévouée sera enchantée de vous assister rapidement.
+                </p>
+                <a href="contact.html" class="dryal-button2">
+                  Contactez-nous !</a>
+              </div>
+            </div>
+            <div class="textbellowblock5">
+              <div class="textright-container">
+                <h1 class="textright">
+                  Ensemble, construisons une entreprise prospère dans le domaine du commerce international.
+                </h1>
+              </div>
+              <div class="textleft-container">
+                <h2 class="textleft">
+                  Lorsque vous choisissez de travailler avec nous dans le domaine de la logistique et du commerce international, vous ne parcourez pas ce chemin seul. Nous sommes à vos côtés, mettant tout en œuvre pour contribuer à la croissance de votre équipe et de votre entreprise dans son ensemble. Si vous recherchez le partenaire idéal pour renforcer votre présence internationale, augmenter vos conversions et stimuler vos revenus, nous sommes là, prêts à vous accompagner !
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    <!--Newsletter-->
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="newsletter">
+        <h4>Inscrivez-vous à notre newsletter pour les dernières mises à jour</h4>
+        <div class="input-container">
+            <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+            </svg>
+            <input type="email" class="email-input" placeholder="Enter your email" required />
+            <div class="subscribe-btn">
+                <span>Subscribe</span>
+            </div>
+        </div>
+    </div>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <div class="contact-location">
+            <h4>AYA Intercontinental - Casablanca - Tanger</h4>
+            <p><i class="fa fa-map-marker-alt"></i> 355 Bd Med V 8ème Etage Bureau 105 - Casablanca</p>
+            <p><i class="fa fa-phone"></i> +212 522-241571</p>
+            <p><i class="fa fa-fax"></i>    +212 522-241561</p>
+            <p><i class="fa fa-envelope"></i>   info@ayaintercontinental.com</p>
+            <p><i class="fa fa-clock"></i>   Heures d'ouverture : Lundi au vendredi : 9h00 - 17h00</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+          <ul>
+            <li><a href="index.html" class="active"><i class="fa fa-home"></i> Accueil</a></li>
+            <li><a href="expertises.html"><i class="fa fa-briefcase"></i> Expertises</a></li>
+            <li><a href="quinoussommes.html"><i class="fa fa-info-circle"></i> Qui Nous Sommes</a></li>
+            <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="secure-lock">
+          <i class="fa fa-lock"></i> Secure & Trusted
+        </div>
+        <p>&copy; 2025 AYA Intercontinental. Tous droits réservés.</p>
+      </div>
+    </footer>
+    <footer class="footermob">
+      <div class="footer-logo-container">
+      </div>
+      <div class="footer-column">
+        <img src="/Images/Long_logo.webp" alt="" class="footer-logo">
+        <p><i class="fa fa-map-marker-alt"></i> 355 Bd Med V 8ème Etage Bureau 105 - Casablanca</p>
+        <p><i class="fa fa-phone"></i> +212 522-241571</p>
+        <p><i class="fa fa-fax"></i>    +212 522-241561</p>
+        <p><i class="fa fa-envelope"></i>   info@ayaintercontinental.com</p>
+        <p><i class="fa fa-clock"></i>   Heures d'ouverture : Lundi au vendredi : 9h00 - 17h00</p>
+      </div>
+      <div class="footer-column">
+        <h3>Liens rapides</h3>
+        <ul>
+          <li><a href="index.html" class="active"><i class="fa fa-home"></i> Accueil</a></li>
+          <li><a href="expertises.html"><i class="fa fa-briefcase"></i> Expertises</a></li>
+          <li><a href="quinoussommes.html"><i class="fa fa-info-circle"></i> Qui Nous Sommes</a></li>
+          <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h4>Restons en contact !</h4>
+        <div class="input-container">
+          <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+          </svg>
+          <input type="email" class="email-input" placeholder="Enter your email">
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AYA Intercontinental. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

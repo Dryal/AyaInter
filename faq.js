@@ -7,10 +7,10 @@ $(document).ready(function(){
         $(".iconFAQ").not(icon).text("+"); // Reset icons
         
         if (answer.is(":visible")) {
-            answer.slideUp(500);
+            answer.slideUp(300);
             icon.text("+");
         } else {
-            answer.slideDown(500);
+            answer.slideDown(300);
             icon.text("-");
         }
     });
