@@ -3190,7 +3190,7 @@ justify-content: center;
   gap: 80px;
   max-width: 800px;
     margin: auto;
-    font-family: inherit; /* Uses default font, no override */  
+    font-family: inherit; 
 }
 .FAQBlock ,.FAQBlock1{
   display: flex;
@@ -3230,11 +3230,11 @@ justify-content: center;
   display: flex;
   justify-content: center;
   background-color: #dceebc;
-  margin-bottom: 30px; /* Adds gap between faq-item blocks */
+  margin-bottom: 30px;
 
 }
 .faq-question{
-  justify-content: space-between; /* Pushes question left & icon right */
+  justify-content: space-between;
   background: none;
   border: none;
   width : 100%;
@@ -3266,14 +3266,14 @@ justify-content: center;
   color: #555;
   display:none;
   background-color: #dceebc;
-  transition: max-height 1.5s ease-out, padding 1.5s ease-out; /* Smooth transition */
-  padding: 0 40px; /* Initially no padding to prevent jump */
-  margin-top: -30px; /* Removes gap between faq-item and faq-answer */
+  transition: max-height 1.5s ease-out, padding 1.5s ease-out; 
+  padding: 0 40px; 
+  margin-top: -30px;
   margin-bottom: 30px;
 }
 .faq-answer.open {
-  max-height: 500px; /* Adjust based on expected content size */
-  padding: 10px 40px; /* Ensure smooth expansion */
+  max-height: 500px; 
+  padding: 10px 40px;
 }
 
 .faq-question.active .iconFAQ{
