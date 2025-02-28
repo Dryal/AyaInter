@@ -3352,3 +3352,133 @@ justify-content: center;
     font-size: 30px;
   }
 }
+
+/* ENGLISH */
+/* ENGLISH */
+/* ENGLISH */
+/* ENGLISH */
+/* ENGLISH */
+
+.home-en .intro-text h2::after{
+  width: 70px;
+}
+
+/* ARABIC */
+/* ARABIC */
+/* ARABIC */
+/* ARABIC */
+/* ARABIC */
+
+.home-ar .navbar{
+  flex-direction: row-reverse;
+}
+.home-ar .nav-links{
+  flex-direction: row-reverse;
+}
+.home-ar a{
+  text-align: right;
+}
+.home-ar .contact-button{
+  font-size: 20px;
+  text-align: center ;
+}
+.home-ar .dryal-hero{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.home-ar .dryal-image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.home-ar .dryal-photo{
+  width: 100%;
+  position: relative;
+  left: 19%;
+}
+.home-ar .dryal-stats{
+  position: absolute;
+  flex-direction: row-reverse;
+  gap: 20px;
+  top: 95%;
+  right: 5%;
+}
+.home-ar .dryal-hero{
+  align-items: center;
+}
+.home-ar .intro-text h2::after{
+  width: 60px;
+  left: 80%;
+}
+.home-ar p{
+  text-align: right;
+  font-size: 22px;
+}
+.home-ar .block-split{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.home-ar .split-text{
+  margin-right: 0;
+  margin-left: 15%;
+}
+.home-ar .text-container22{
+  text-align: right;
+}
+.home-ar li{
+  font-size: 18px;
+}
+.home-ar .block5right{
+  text-align: right;
+}
+.home-ar .textleft{
+  text-align: right;
+}
+.home-ar .footer-content{
+  flex-direction: row-reverse;
+}
+.home-ar .contact-location p{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.home-ar .footer-column h3{
+  text-align: right;
+}
+.home-ar .contact-location{
+  text-align: right;
+}
+.home-ar .footer-column a{
+  text-align: right;
+  flex-direction: row-reverse;
+  gap: 20px;
+  font-size: 22px;
+}
+.home-ar .secure-lock{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.home-ar .footer-bottom{
+  display: flex;
+  flex-direction: column;
+}
+.home-ar .monavc{
+  flex-direction: row-reverse;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+.home-ar .mobile-logo img{
+  padding-left: 0px;
+  padding-right: 50px;
+}
+.home-ar .sidebar{
+  right: -250px; /* Start hidden on the right */
+
+}
+.home-ar .sidebar.active {
+  right: 0;
+  transform: translateX(100%);
+}
