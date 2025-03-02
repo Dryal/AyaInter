@@ -7,3 +7,4 @@ darker green : #7a9e2d
 
 
 main dark blue : #00262f
+#1f3f3f
