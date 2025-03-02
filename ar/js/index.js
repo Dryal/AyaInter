@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sidebar.classList.remove('active');
   }
   const burgerMenu = document.querySelector('.mobile-burger-menu');
-  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenu = document.querySelector('.sidebar');
   
   burgerMenu.addEventListener('click', () => {
     if (mobileMenu.style.right === '0px') {

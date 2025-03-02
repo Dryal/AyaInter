@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.getElementById('theme-toggle');  // Get the checkbox element
+  const body = document.body;  // Target the body element
+
+  // Function to toggle the dark theme class
+  const toggleTheme = () => {
+    if (checkbox.checked) {
+      body.classList.add('dark-theme');  // Add dark theme class
+    } else {
+      body.classList.remove('dark-theme');  // Remove dark theme class
+    }
+  };
+
+  // Listen for changes on the checkbox
+  checkbox.addEventListener('change', toggleTheme);
+
+  // Initialize the theme based on checkbox state when the page loads
+  if (checkbox.checked) {
+    body.classList.add('dark-theme');
+  } else {
+    body.classList.remove('dark-theme');
+  }
+});
+document.addEventListener('DOMContentLoaded', function () {
   const stats = document.querySelectorAll('.dryal-stat2 h3');
 
   stats.forEach(function (stat) {
