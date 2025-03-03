@@ -21,7 +21,7 @@ body {
 .dark-theme {
   --blue-green: #aad03a ;
   --green-blue: #00acc1;
-  --ccchange-col: #ebf8db;
+  --ccchange-col: #d5f1a1;
   --cchange-col:black;
   --main-title: #ebf8db;
   --bg2-color: #00181c;
@@ -182,6 +182,14 @@ display: flex;
   }
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  .dark-theme{
+    .dropdown-content{
+      background: #00181c;
+    }
+    .dropdown-content a:hover{
+      background-color: #485e1a;
+    }
   }
   .contact-button {
     width: 140px;
@@ -1074,7 +1082,9 @@ border-color: #111 transparent transparent transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .dark-theme .column{
-  background-color: #1f3f3f;
+  box-shadow: 0 0 5px #00262f, 0 0 10px #00262f;
+  animation: neonGlow 1.5s infinite alternateease-in-out;
+  background: linear-gradient(45deg, #00181c, #00262f, #00181c);
 }
 
 .column:hover {
@@ -1956,10 +1966,15 @@ body {
 }
 .dark-theme{
   .newsletter {
-    background-color: #00262f;
-    color: var(--secondary-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    
+    box-shadow: 0 0 10px #00262f, 0 0 20px #0090af;
+    animation: neonGlow 1.5s infinite alternate ease-in-out;
+    background:linear-gradient(45deg, #00181c, #00262f,#00181c);
+    color: var(--secondary-color);    
+  }
+  @keyframes neonGlow {
+    0% { box-shadow: 0 0 5px #00acc1, 0 0 10px #00acc1; }
+    50% { box-shadow: 0 0 15px #00acc1, 0 0 30px #00acc1; }
+    100% { box-shadow: 0 0 5px #00acc1, 0 0 10px #00acc1; }
   }
   .email-input {
     background-color: #000000;
@@ -2182,6 +2197,22 @@ body {
     padding-left: 20px;
   }
 }
+.dark-theme {
+  .footermob{
+    background: linear-gradient(180deg, #000000, #00262f);
+  }
+  .footer-column p{
+    color: white;
+  }
+  .footer-column p i{
+    color: #0090af;
+  }
+  .footermob .newsletter{
+    background: linear-gradient(180deg, #00181c, #00262f);  
+    border: 1px solid #485e1a; /* Bright cyan border */
+    box-shadow: 0 0 5px #485e1a, 0 0 10px #485e1a; /* Glowing effect */
+  }
+}
 /*Block 3*/
 
 .split-text{
@@ -2228,7 +2259,7 @@ QUI NOUS SOMMES
   width: 100%;
   height: 55vh; /* Full screen height */
   color: white; /* Ensure text is visible */
-  margin-bottom: 30px; /* Add space below the hero section */
+  margin-bottom: 0px; /* Add space below the hero section */ /*back to 30px if something wrong happens*/
   overflow: hidden; /* Prevent overflow of image */
 }
 
@@ -2262,6 +2293,9 @@ QUI NOUS SOMMES
   border-image-slice: 1;
   animation: borderAnimation 2s linear infinite;
   z-index: 2;
+}
+.dark-theme .titreQNS{
+  color: #d5f1a1;
 }
 .heroQNS2 {
   display: flex;
@@ -2307,10 +2341,10 @@ QUI NOUS SOMMES
   width: 100%;
   height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensure image scales nicely */
-  border: 4px solid;
-  border-image-source: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--primary-color));
-  border-image-slice: 1;
-  animation: borderAnimation 2s linear infinite;
+  box-shadow: 0 0 10px #00262f, 0 0 20px #0090af;
+  animation: neonGlow 1.5s infinite alternateease-in-out;
+  background: linear-gradient(45deg, #00181c, #00262f, #00181c);
+  border-radius: 30px;
 }
 
 .split-text2 {
@@ -2584,8 +2618,8 @@ QUI NOUS SOMMES
   .heroQNS1{
     height: 15vh;
     justify-content: center;
-    margin-top: 20px;
     margin-bottom: 0px;
+    padding-top: 20px;
     width: 100%;
   }
   .titreQNS{
@@ -2600,6 +2634,17 @@ QUI NOUS SOMMES
       opacity: 1;
     }
 }
+  .dark-theme{
+    .heroQNS1{
+      background: #00262f;
+    }
+    .title-mainE{
+      color: #d5f1a1;
+    }
+    .title-descriptionE{
+      color: white;
+    }
+  }
 }
 /* Expertises */
 /* Expertises */
@@ -2617,12 +2662,12 @@ QUI NOUS SOMMES
   .title-mainE {
   font-size: 36px;
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--ccchange-col);
   margin-bottom: 20px;
   }
   .title-descriptionE {
   font-size: 18px;
-  color: #555;
+  color: var(--color-gray);
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
@@ -2688,6 +2733,29 @@ QUI NOUS SOMMES
   font-size: 14px;
   }
 }
+.dark-theme{
+  .card{
+    background:linear-gradient(45deg, #00181c, #00262f,#00181c);
+  }
+  .card h3{
+    color: #d5f1a1;
+  }
+  .card-text p{
+    color: white;
+  }
+  .heroQNS3{
+    border: 3px solid #00262f;
+    box-shadow: 0 0 10px #00262f, 0 0 20px #0090af;
+    animation: neonGlow 1.5s infinite alternate ease-in-out;
+    background:linear-gradient(45deg, #00181c, #00262f,#00181c);
+  }
+  @keyframes neonGlow {
+    0% { box-shadow: 0 0 5px #00acc1, 0 0 10px #00acc1; }
+    50% { box-shadow: 0 0 15px #00acc1, 0 0 30px #00acc1; }
+    100% { box-shadow: 0 0 5px #00acc1, 0 0 10px #00acc1; }
+}
+
+}
 /* Contact */
 /* Contact */
 /* Contact */
@@ -2698,7 +2766,7 @@ QUI NOUS SOMMES
 .contact-container {
   font-family: Arial, sans-serif;
   display: grid;
-  background: linear-gradient(180deg ,#d5f1a1, var(--bg-color));
+  background: linear-gradient(180deg ,#d5f1a1,#ebf8db);
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
@@ -2720,6 +2788,38 @@ QUI NOUS SOMMES
   transform: scale(1);
   }
   }
+  .dark-theme {
+    .contact-header h1{
+      color: #d5f1a1;
+    }
+    .contact-container{
+      box-shadow: 0 0 10px #00262f, 0 0 20px #00262f;
+      animation: neonGlow 1.5s infinite alternateease-in-out;
+      background: linear-gradient(45deg, #00181c, #00262f, #00181c);
+    }
+    .contact-left-title p{
+      color: #f0f0f0;
+    }
+    .contact-icons{
+      background: transparent;
+    }
+    .contact-inputs{
+      background-color: #00262f;
+      border: 1px solid #00acc1 ;
+    }
+    .contact-inputs::placeholder{
+      color: #c7c7c7;
+    }
+    .icon-box{
+      background: #00262f;
+    }
+    .icon{
+      color: #00262f;
+      background: #00181c;
+    }
+
+  }
+    
   .contact-info {
   display: flex;
   flex-direction: column;
@@ -3502,6 +3602,33 @@ justify-content: center;
     height: 65px;
     }
     }
+    .dark-theme{
+      .CBlock{
+        background: transparent;
+        border: 0px;
+      }
+      .CBlock h3{
+        color: #d5f1a1;
+      }
+      .CBlock-3 li p, .CBlock-1 li p{
+        color: white;
+      }
+      .CBlockM{
+        background-color: transparent;
+        box-shadow: none;
+      }
+      .CBlock2-1,
+      .CBlock2-2,
+      .CBlock2-3{
+        border: 0px;
+        box-shadow: 0 0 10px #00262f, 0 0 20px #00262f;
+        animation: neonGlow 1.5s infinite alternateease-in-out;
+        background: linear-gradient(45deg, #00181c, #00262f, #00181c);
+      }
+      .CBlock2 h2{
+        color: #d5f1a1;
+      }
+    }
 /* mots du president */
 /* mots du president */
 /* mots du president */
@@ -3697,7 +3824,22 @@ justify-content: center;
     font-size: 30px;
   }
 }
-
+.dark-theme{
+  .faq-item{
+    border: 0px;
+    box-shadow: 0 0 5px #00262f, 0 0 10px #0090af;
+    animation: neonGlow 1.5s infinite alternateease-in-out;
+    background: linear-gradient(45deg, #00181c, #00262f, #00181c);
+  }
+  .faq-answer{
+    border: 0px;
+    box-shadow: 0 5px 5px #00262f, 0 5px 10px #0090af;
+    background: transparent;
+  }
+  .faq-answer p{
+    color: #f0f0f0;
+  }
+}
 /* ENGLISH */
 /* ENGLISH */
 /* ENGLISH */
@@ -3779,6 +3921,10 @@ justify-content: center;
 }
  .text-container22{
   text-align: right;
+}
+.text-container22 ul{
+  padding-left: 0px;
+  padding-right: 40px;
 }
  li{
   font-size: 18px;
