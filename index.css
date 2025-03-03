@@ -1916,7 +1916,7 @@ body {
   color: #292524; /* Dark text color */
   font-size: 18px;
   outline: none;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
 }
 
 .email-input:focus {
@@ -1926,6 +1926,7 @@ body {
 }
 
 .subscribe-btn {
+  font-size: 14px;
   display: inline-block;
   padding: 12px 20px;
   background-color: var(--primary-color); /* Main green for the button */
@@ -1938,10 +1939,8 @@ body {
 }
 
 .subscribe-btn:hover {
-  transform: translateX(15px); /* Button moves out of the box on hover */
   background-color: var(--secondary-color); /* Switch to blue on hover */
 }
-
 .email-icon {
   position: absolute;
   left: 20px; /* Positioned at the beginning of the email input */
@@ -1952,7 +1951,6 @@ body {
   fill: var(--secondary-color); /* Blue color for the icon */
   transition: transform 0.3s ease;
 }
-
 .email-icon:hover {
   transform: translateY(-50%) scale(1.2);
 }
@@ -3893,6 +3891,29 @@ justify-content: center;
 }
 .faq-question{
   flex-direction: row-reverse;
+}
+.contact-left{
+  border-right: 0px ;
+  border-left: 4px solid var(--primary-color);
+}
+.dude{
+  flex-direction: row-reverse;
+}
+.icon-box p{
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (max-width:900px){
+  .contact-left{
+    border-left: 0px;
+  }
+  .contact-info p{
+    text-align: center;
+  }
+  .dude{
+    flex-direction: column;
+  }
 }
 @media (max-width:768px){
   .faq-question{
