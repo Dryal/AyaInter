@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Images/logo.webp">
+    <title>FAQ &#8211; AYA Intercontinental</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="FAQ-page FAQ-ar">
+    <!-- Header -->
+    <div class="navbar">
+        <div class="logo">
+          <a href="home.html">
+            <img src="/Images/cropped-cropped-Untitled-design-2.webp" alt="Logo" class="logo-img">
+          </a>
+        </div>
+        <button class="burger-menu" aria-label="Toggle navigation">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div class="nav-links">
+          <div class="dropdown">
+            <button class="dropbtn">ملاحة
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="expertise.html">خبرتنا</a>
+              <a href="CSR.html">المسؤولية الاجتماعية</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">معلومات
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="about.html">معلومات عنا</a>
+              <a href="presidentmessage.html">رسالة الرئيس</a>
+              <a href="FAQ.html">الأسئلة الشائعة</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">اللغات
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../index.html">اللغة الفرنسية</a>
+              <a href="../en/home.html">اللغة الإنجليزية</a>
+              </div>
+          </div>
+        </div>
+        <div class="rdng">
+          <button class="Buttonforcontact">
+            <a href="contact.html" class="contact-button">اتصل بنا</a>
+          </button>
+        </div>
+        
+        </div>
+        <div class="mobilenav">
+          <div class="monavc">
+            <button onclick=showSidebar() class="mobile-burger-menu" aria-label="Toggle navigation">
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+              <span class="mobile-line"></span>
+            </button>
+            <div class="mobile-logo">
+              <a href="home.html">
+                  <img src="/Images/logo.webp" alt="Logo" class="mobile-logo-img">
+              </a>
+            </div>
+            <button class="mobile-contact-button">
+              <a href="contact.html" class="mobile-contact-link">اتصل بنا</a>
+            </button>  
+          </div>
+        </div>
+        <div class="sidebar">
+          <button onclick=closeSidebar() class="close-btn">&times;</button>
+          <ul>
+              <li><a href="expertise.html">خبرتنا</a></li>
+              <li><a href="CSR.html">المسؤولية الاجتماعية</a></li>
+              <li><a href="about.html">معلومات عنا</a></li>
+              <li><a href="presidentmessage.html">رسالة الرئيس</a></li>
+              <li><a href="FAQ.html">الأسئلة الشائعة</a></li>
+              <li><a href="../index.html">اللغة الفرنسية</a></li>
+              <li><a href="../en/home.html">اللغة الإنجليزية</a></li>
+          </ul>
+        </div>
+        <div class="overlay2"></div>
+        <div class="heroQNS1">
+            <img src="/Images/port-7214106.jpg" alt="Img Img Img" class="Mob-ImQNS" >
+            <h1 class="titreQNS">الأسئلة الشائعة</h1>    
+        </div>
+        <div class="hero-section">
+            <div class="FAQBlock">
+                <div class="FAQBlock1">
+                    <h1>الأسئلة الشائعة</h1>
+                    <p>رحلة لوجستية سلسة، تربط بين الوجهات العالمية بدقة وموثوقية.</p>
+                    </div>
+                    <div class="FAQBlock2">
+                    <div class="faq-item">
+                    <button class="faq-question">
+                    ما هي الخدمات التي تقدمها AYA Intercontinental؟
+                    <span class="iconFAQ">+</span>
+                    </button>
+                    </div>
+                    <div class="faq-answer">
+                    <p>نحن نقدم مجموعة كاملة من الخدمات اللوجستية، بما في ذلك إدارة سلسلة التوريد، وحلول الجمارك المتقدمة، والشحن، والتخزين، والتوزيع وحل النزاعات التجارية الدولية.</p>
+                    </div>
+
+                    <div class="faq-item">
+                    <button class="faq-question">
+                    لماذا تختار AYA Intercontinental للخدمات اللوجستية والتجارة الدولية؟
+                    <span class="iconFAQ">+</span>
+                    </button>
+                    </div>
+                    <div class="faq-answer">
+                    <p>بفضل خبرتنا التي تزيد عن 30 عامًا ومواقعنا الاستراتيجية في الدار البيضاء وطنجة، نتمتع بخبرة عميقة في اللوائح الجمركية والتجارة الدولية. حلولنا مخصصة لتحسين عملياتك ومساعدتك على التنقل بكفاءة في بيئة عمل معقدة.</p>
+                    </div>
+
+                        <div class="faq-item">
+                        <button class="faq-question">
+                        هل يمكن لشركة AYA Intercontinental التعامل مع الإجراءات الجمركية لشركتي؟
+                        <span class="iconFAQ">+</span>
+                        </button>
+                        </div>
+                        <div class="faq-answer">
+                        <p>نعم، يضمن فريق خبراء الجمارك لدينا سير عملية التخليص الجمركي بسلاسة وفقًا للأنظمة المحلية والدولية، مما يقلل من التأخير والتكاليف.</p>
+                        </div>
+
+                        <div class="faq-item">
+                        <button class="faq-question">
+                        في أي قطاعات تعملون؟
+                        <span class="iconFAQ">+</span>
+                        </button>
+                        </div>
+                        <div class="faq-answer">
+                        <p>نحن نعمل مع مجموعة واسعة من الصناعات، بما في ذلك التجارة الدولية والاستيراد والتصدير والخدمات اللوجستية والتوزيع وغيرها الكثير. حلولنا مصممة خصيصًا لتلبية الاحتياجات المحددة لكل قطاع.</p>
+                        </div>
+                        <div class="faq-item">
+                        <button class="faq-question">
+                        كيف تساعد AYA Intercontinental في حل النزاعات التجارية الدولية؟
+                        <span class="iconFAQ">+</span>
+                        </button>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يقدم مستشارونا المتخصصون حلولاً استراتيجية لحل النزاعات التجارية، مما يضمن حماية مصالح شركتك مع الامتثال للأنظمة المعمول بها.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                            <button class="faq-question">
+                            هل تشارك AYA Intercontinental في أي مبادرات للمسؤولية الاجتماعية للشركات؟
+                            <span class="iconFAQ">+</span>
+                            </button>
+                            </div>
+                            <div class="faq-answer">
+                            <p>نعم، نحن ندمج الممارسات المستدامة في عملياتنا ونلتزم بتقليل بصمتنا البيئية، وتعزيز ممارسات الأعمال الأخلاقية ودعم المبادرات الاجتماعية.</p>
+                            </div>
+                            
+                            <div class="faq-item">
+                            <button class="faq-question">
+                            هل تقدمون حلول شحن دولية؟
+                            <span class="iconFAQ">+</span>
+                            </button>
+                            </div>
+                            <div class="faq-answer">
+                            <p>نعم، نحن نقدم خدمات الشحن البري والبحري والجوي، مما يضمن شحن بضائعك بأمان وكفاءة على المستوى الدولي.</p>
+                            </div>
+                            
+                        <div class="faq-item">
+                            <button class="faq-question">
+                            كيف يمكنني الحصول على عرض أسعار لخدماتكم؟
+                            <span class="iconFAQ">+</span>
+                            </button>
+                        </div>
+                    <div class="faq-answer">
+                        <p>يمكنك الاتصال بنا مباشرة عبر موقعنا الإلكتروني أو إرسال بريد إلكتروني إلينا بتفاصيل متطلباتك. سيرد عليك أحد أعضاء فريقنا بسرعة باقتراح مناسب.</p>
+                    </div>
+                </div>                 
+            </div>
+            <div class="AVA">
+            <h1>هل لديك أسئلة أخرى؟</h1>
+            <button class="contact-btn">
+                <a href="contact.html">اتصل بنا!</a>
+            </button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="newsletter">
+              <h4>اشترك في النشرة الإخبارية لدينا للحصول على آخر التحديثات</h4>
+              <div class="input-container">
+                  <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+                  </svg>
+                  <input type="email" class="email-input" placeholder="أدخل بريدك الإلكتروني" />
+                  <div class="subscribe-btn">
+                      <span>إشتراك</span>
+                  </div>
+              </div>
+          </div>
+            <div class="footer-content">
+              <div class="footer-column">
+                <h3>اتصل بنا</h3>
+                <div class="contact-location">
+                  <h4>آيا إنتركونتيننتال - الدار البيضاء - طنجة</h4>
+                  <p><i class="fa fa-map-marker-alt" dir='rtl'></i> المنطقة الثامنة، فضاء يسرا، 355، مكتب 105 شارع محمد الخامس، الدار البيضاء 20300</p>
+                  <p><i class="fa fa-phone"></i> +212 522-241571</p>
+                  <p><i class="fa fa-fax"></i>    +212 522-241561</p>
+                  <p><i class="fa fa-envelope"></i>   info@ayaintercontinental.com</p>
+                  <p><i class="fa fa-clock"></i> ساعات العمل: من الاثنين إلى الجمعة: 9:00 صباحًا - 5:00 مساءً</p>
+                </div>
+              </div>
+              <div class="footer-column">
+                <h3>روابط سريعة</h3>
+                <ul>
+                  <li><a href="home.html" ><i class="fa fa-home"></i> الصفحة الرئيسية</a></li>
+                  <li><a href="expertise.html"><i class="fa fa-briefcase"></i> خبرتنا</a></li>
+                  <li><a href="about.html" class="active"><i class="fa fa-info-circle"></i> معلومات عنا</a></li>
+                  <li><a href="contact.html"><i class="fa fa-phone"></i> اتصل بنا</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="secure-lock">
+                <i class="fa fa-lock"></i> آمن وموثوق
+              </div>
+              <p>© نسخة 2025 AYA Intercontinental. جميع الحقوق محفوظة.</p>
+            </div>
+          </footer>
+          <footer class="footermob">
+            <div class="footer-logo-container">
+            </div>
+            <div class="footer-column">
+              <img src="/Images/Long_logo.webp" alt="" class="footer-logo">
+              <p><i class="fa fa-map-marker-alt"></i> المنطقة الثامنة، فضاء يسرا، 355، مكتب 105 شارع محمد الخامس، الدار البيضاء 20300</p>
+              <p><i class="fa fa-phone"></i> +212 522-241571</p>
+              <p><i class="fa fa-fax"></i>    +212 522-241561</p>
+              <p><i class="fa fa-envelope"></i>   info@ayaintercontinental.com</p>
+              <p><i class="fa fa-clock"></i> ساعات العمل: من الاثنين إلى الجمعة: 9:00 صباحًا - 5:00 مساءً</p>
+            </div>
+            <div class="footer-column">
+              <h3>روابط سريعة</h3>
+              <ul>
+                <li><a href="home.html"><i class="fa fa-home"></i> الصفحة الرئيسية</a></li>
+                <li><a href="expertise.html"><i class="fa fa-briefcase"></i> خبرتنا</a></li>
+                <li><a href="about.html" class="active"><i class="fa fa-info-circle"></i> معلومات عنا</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i> اتصل بنا</a></li>
+              </ul>
+            </div>
+            <div class="newsletter">
+              <h4>لنبقَ على تواصل </h4>
+              <div class="input-container">
+                <svg class="email-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path d="M12 13.4l8-5.4v9.2c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V7.2l8 5.4zm0-2.8L4 6.6V5c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v1.6l-8 5.4z"/>
+                </svg>
+                <input type="email" class="email-input" placeholder="أدخل بريدك الإلكتروني">
+                <button class="subscribe-btn">اشترك</button>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2025 AYA Intercontinental. جميع الحقوق محفوظة.</p>
+            </div>
+          </footer>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+    <script src="../faq.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
