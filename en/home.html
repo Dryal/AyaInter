@@ -16,6 +16,9 @@
 </head>
 <body class="home-en">
     <!-- Header -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <div class="navbar">
         <div class="logo">
           <a href="home.html">
@@ -96,27 +99,29 @@
           </div>
         </div>
         <div class="sidebar">
-          <button onclick=closeSidebar() class="close-btn">&times;</button>
-          <ul>
-              <li><a href="expertise.html">Expertise</a></li>
-              <li><a href="CSR.html">Social Responsibility</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="presidentmessage.html">President's Message</a></li>
-              <li><a href="FAQ.html">FAQ</a></li>
-              <li class="customs-dropdown">
-                <a href="#" onclick="toggleCustoms(event)">
-                    Customs <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
-                </a>
-                <ul class="customs-menu">
-                    <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tariff of customs duties</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circular</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Agreements and conventions</a></li>
-                    <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
-                </ul>
-              </li>
-              <li><a href="../index.html">French</a></li>
-              <li><a href="../ar/home.html">Arabic</a></li>
-          </ul>
+          <div class="eerr3">
+            <button onclick=closeSidebar() class="close-btn">&times;</button>
+            <ul>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="CSR.html">Social Responsibility</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="presidentmessage.html">President's Message</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="customs-dropdown">
+                  <a href="#" onclick="toggleCustoms(event)">
+                      Customs <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
+                  </a>
+                  <ul class="customs-menu">
+                      <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tariff of customs duties</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circular</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Agreements and conventions</a></li>
+                      <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
+                  </ul>
+                </li>                     
+                <li><a href="../index.html">French</a></li>
+                <li><a href="/ar/home.html">Arabic</a></li>
+            </ul>
+          </div>
           <div class="mobiletheme">
             <li class="dark-theme2">Dark theme</li>
             <div>
@@ -216,13 +221,13 @@
               <h2>Why AYA Intercontinental?</h2>
             </div>
             <div class="extra-content">
-              <div class="column">
+              <div class="column" data-aos="fade-right">
                 <p><strong>Our Experts:</strong> With a team of highly skilled consultants, we specialize in resolving international trade disputes and navigating complex customs regulations. Our expertise spans diverse industries, making us a trusted partner for businesses seeking effective legal solutions.</p>
               </div>
-              <div class="column">
+              <div class="column" data-aos="fade-left">
                 <p><strong>Customized Solutions:</strong> Our services are tailored to meet your unique needs. We believe in a collaborative approach, working closely with you to develop logistics solutions that are perfectly tailored to your business.</p>
               </div>
-              <div class="column">
+              <div class="column" data-aos="fade-up">
                 <p><strong>Our Commitment:</strong>We have in-depth knowledge of the market and regulatory environment in North Africa, enabling us to tackle complex logistics challenges with ease. While firmly rooted in North Africa, our extensive global network ensures that we can provide logistics solutions wherever your business takes you. With our expertise and commitment, we save you valuable time and streamline the use of your resources, leaving you free to focus on the growth and success of your business.</p>
               </div>
             </div>
@@ -331,7 +336,8 @@
                 <span>Subscribe</span>
             </div>
         </div>
-    </div>
+      </div>
+      <div id="error-popup" class="popup">Error 500: There was a problem with the server. Please try again later.</div>
       <div class="footer-content">
         <div class="footer-column">
           <h3>Contact</h3>

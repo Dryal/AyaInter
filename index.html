@@ -43,7 +43,7 @@
             </button>
             <div class="dropdown-content">
               <a href="quinoussommes.html">Qui Nous Sommes</a>
-              <a href="motdupresident.html">Mot du Président</a>
+              <a href="motdupresident.html">Mots du Président</a>
               <a href="FAQ.html">FAQ</a>
             </div>
           </div>
@@ -96,27 +96,29 @@
           </div>
         </div>
         <div class="sidebar">
-          <button onclick=closeSidebar() class="close-btn">&times;</button>
-          <ul>
-              <li><a href="expertises.html">Expertises</a></li>
-              <li><a href="CSR.html">Responsabilité Sociale</a></li>
-              <li><a href="quinoussommes.html">Qui Nous Sommes</a></li>
-              <li><a href="motdupresident.html">Mot du President</a></li>
-              <li><a href="FAQ.html">FAQ</a></li>
-              <li class="customs-dropdown">
-                <a href="#" onclick="toggleCustoms(event)">
-                    Douane <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
-                </a>
-                <ul class="customs-menu">
-                    <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tarif des droits de douane</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circulaire</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Accords et conventions</a></li>
-                    <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
-                </ul>
-              </li>
-              <li><a href="en/home.html">Anglais</a></li>
-              <li><a href="ar/home.html">Arabe</a></li>
-          </ul>
+          <div class="eerr3">
+            <button onclick=closeSidebar() class="close-btn">&times;</button>
+            <ul>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="CSR.html">Responsabilité Sociale</a></li>
+                <li><a href="quinoussommes.html">Qui Nous Sommes</a></li>
+                <li><a href="motdupresident.html">Mots du President</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="customs-dropdown">
+                  <a href="#" onclick="toggleCustoms(event)">
+                      Douane <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
+                  </a>
+                  <ul class="customs-menu">
+                      <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tarif des droits de douane</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circulaire</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Accords et conventions</a></li>
+                      <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
+                  </ul>
+                </li>
+                <li><a href="en/home.html">Anglais</a></li>
+                <li><a href="ar/home.html">Arabe</a></li>
+            </ul>
+          </div>
           <div class="mobiletheme">
                 <li class="dark-theme2">Thème sombre</li>
                 <div>
@@ -216,18 +218,21 @@
               <h2>Pourquoi Choisir AYA Intercontinental ?</h2>
             </div>
             <div class="extra-content">
-              <div class="column">
+              <div class="column" data-aos="fade-right">
                 <p><strong>Nos Experts:</strong> Avec une équipe de consultants hautement qualifiés, nous nous spécialisons dans la résolution de litiges commerciaux internationaux et la navigation des réglementations douanières complexes. Notre expertise couvre diverses industries, ce qui fait de nous un partenaire de confiance pour les entreprises en quête de solutions juridiques efficaces.</p>
               </div>
-              <div class="column">
+              <div class="column" data-aos="fade-left">
                 <p><strong>Solutions Personnalisées:</strong> Nos services sont conçus sur mesure pour répondre précisément à vos besoins uniques. Nous croyons en une approche collaborative, travaillant en étroite coordination avec vous pour élaborer des solutions logistiques qui sont parfaitement adaptées à votre entreprise.</p>
               </div>
-              <div class="column">
+              <div class="column" data-aos="fade-up">
                 <p><strong>Notre Engagement:</strong>Nous avons une connaissance approfondie du marché et de l’environnement réglementaire en Afrique du Nord, ce qui nous permet de relever aisément les défis logistiques complexes. Bien que solidement ancrés en Afrique du Nord, notre vaste réseau mondial garantit que nous pouvons fournir des solutions logistiques partout où votre entreprise vous mène. Grâce à notre expertise et à notre engagement, nous vous permettons de gagner un temps précieux et de rationaliser l’utilisation de vos ressources, vous laissant ainsi libre de vous concentrer sur la croissance et le succès de votre entreprise.</p>
               </div>
             </div>
           </div>                
         <!-- Second Block: Split Sections with Images -->
+        <div id="progress">
+          <span id="progress-value">&#x1F815;</span>
+        </div>
         <div class="block-split">
           <div class="split-text">
             <h1 class="Grandtitre">À Propos de Nous</h1>
@@ -331,7 +336,8 @@
                 <span>Abonnez-vous</span>
             </div>
         </div>
-    </div>
+      </div>
+      <div id="error-popup" class="popup">Erreur 500: Un problème est survenu sur le serveur. Veuillez réessayer plus tard.</div>
       <div class="footer-content">
         <div class="footer-column">
           <h3>Contact</h3>
@@ -395,6 +401,7 @@
         <p>&copy; 2025 AYA Intercontinental. All rights reserved.</p>
       </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
       AOS.init();

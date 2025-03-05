@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body class="contact-page">
     <!-- Header -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <div class="navbar">
         <div class="logo">
           <a href="index.html">
@@ -42,7 +46,7 @@
             </button>
             <div class="dropdown-content">
               <a href="quinoussommes.html">Qui Nous Sommes</a>
-              <a href="motdupresident.html">Mot du Président</a>
+              <a href="motdupresident.html">Mots du Président</a>
               <a href="FAQ.html">FAQ</a>
             </div>
           </div>
@@ -95,27 +99,30 @@
           </div>
         </div>
         <div class="sidebar">
-          <button onclick=closeSidebar() class="close-btn">&times;</button>
-          <ul>
-              <li><a href="expertises.html">Expertises</a></li>
-              <li><a href="csr.html">Responsabilité Sociale</a></li>
-              <li><a href="quinoussommes.html">Qui Nous Sommes</a></li>
-              <li><a href="motdupresident.html">Mot du President</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li class="customs-dropdown">
-                <a href="#" onclick="toggleCustoms(event)">
-                    Douane <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
-                </a>
-                <ul class="customs-menu">
-                    <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tarif des droits de douane</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circulaire</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Accords et conventions</a></li>
-                    <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
-                </ul>
-              </li>
-              <li><a href="en/home.html">Anglais</a></li>
-              <li><a href="ar/home.html">Arabe</a></li>
-              <div class="mobiletheme">
+          <div class="eerr3">
+            <button onclick=closeSidebar() class="close-btn">&times;</button>
+            <ul>
+                <li><a href="expertises.html">Expertises</a></li>
+                <li><a href="CSR.html">Responsabilité Sociale</a></li>
+                <li><a href="quinoussommes.html">Qui Nous Sommes</a></li>
+                <li><a href="motdupresident.html">Mots du President</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="customs-dropdown">
+                  <a href="#" onclick="toggleCustoms(event)">
+                      Douane <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
+                  </a>
+                  <ul class="customs-menu">
+                      <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tarif des droits de douane</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circulaire</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Accords et conventions</a></li>
+                      <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
+                  </ul>
+                </li>
+                <li><a href="en/home.html">Anglais</a></li>
+                <li><a href="ar/home.html">Arabe</a></li>
+            </ul>
+          </div>
+          <div class="mobiletheme">
                 <li class="dark-theme2">Thème sombre</li>
                 <div>
                   <label class="switch" for="switch">
@@ -137,13 +144,12 @@
                   </label>
                 </div>                          
               </div>
-          </ul>
         </div>
         <div class="overlay2"></div>
 
         <div class="heroQNS1">
             <img src="Images/port-7214106.jpg" alt="Img Img Img" class="Mob-ImQNS" >
-            <h1 class="titreQNS">Contact</h1>    
+            <h1 class="titreQNS" data-aos="fade-left">Contact</h1>    
         </div>
         <section class="hero-section">
             <div class="contact-container">
@@ -233,7 +239,8 @@
                 <span>Abonnez-vous</span>
             </div>
         </div>
-    </div>
+      </div>
+      <div id="error-popup" class="popup">Erreur 500: Un problème est survenu sur le serveur. Veuillez réessayer plus tard.</div>
       <div class="footer-content">
         <div class="footer-column">
           <h3>Contact</h3>
@@ -297,6 +304,10 @@
         <p>&copy; 2025 AYA Intercontinental. All rights reserved.</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 
 </html>

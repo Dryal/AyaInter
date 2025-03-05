@@ -12,9 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body class="contact-page">
     <!-- Header -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
     <div class="navbar">
         <div class="logo">
           <a href="home.html">
@@ -63,7 +67,7 @@
             </button>
             <div class="dropdown-content">
               <a href="../index.html">French</a>
-              <a href="ar/home.html">Arabic</a>
+              <a href="/ar/home.html">Arabic</a>
               </div>
           </div>
         </div>
@@ -95,27 +99,29 @@
           </div>
         </div>
         <div class="sidebar">
-          <button onclick=closeSidebar() class="close-btn">&times;</button>
-          <ul>
-              <li><a href="expertise.html">Expertise</a></li>
-              <li><a href="CSR.html">Social Responsibility</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="presidentmessage.html">President's Message</a></li>
-              <li><a href="FAQ.html">FAQ</a></li>
-              <li class="customs-dropdown">
-                <a href="#" onclick="toggleCustoms(event)">
-                    Customs <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
-                </a>
-                <ul class="customs-menu">
-                    <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tariff of customs duties</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circular</a></li>
-                    <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Agreements and conventions</a></li>
-                    <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
-                </ul>
-              </li>
-              <li><a href="../index.html">French</a></li>
-              <li><a href="ar/home.html">Arabic</a></li>
-          </ul>
+          <div class="eerr3">
+            <button onclick=closeSidebar() class="close-btn">&times;</button>
+            <ul>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="CSR.html">Social Responsibility</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="presidentmessage.html">President's Message</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li class="customs-dropdown">
+                  <a href="#" onclick="toggleCustoms(event)">
+                      Customs <span class="arrow1"><img src="/Images/right-arrow.png" alt="Arrow"></span>
+                  </a>
+                  <ul class="customs-menu">
+                      <li><a href="https://www.douane.gov.ma/web/guest/tarif" target="_blank">Tariff of customs duties</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/circulaires" target="_blank">Circular</a></li>
+                      <li><a href="https://www.douane.gov.ma/web/guest/accords-et-conventions" target="_blank">Agreements and conventions</a></li>
+                      <li><a href="https://www.douane.gov.ma/adil/" target="_blank">ADIL</a></li>
+                  </ul>
+                </li>                     
+                <li><a href="../index.html">French</a></li>
+                <li><a href="/ar/home.html">Arabic</a></li>
+            </ul>
+          </div>
           <div class="mobiletheme">
             <li class="dark-theme2">Dark theme</li>
             <div>
@@ -143,7 +149,7 @@
 
         <div class="heroQNS1">
             <img src="/Images/port-7214106.jpg" alt="Img Img Img" class="Mob-ImQNS" >
-            <h1 class="titreQNS">Contact</h1>    
+            <h1 class="titreQNS" data-aos="fade-left">Contact</h1>    
         </div>
         <section class="hero-section">
             <div class="contact-container">
@@ -232,7 +238,8 @@
                   <span>Subscribe</span>
               </div>
           </div>
-      </div>
+        </div>
+        <div id="error-popup" class="popup">Error 500: There was a problem with the server. Please try again later.</div>
         <div class="footer-content">
           <div class="footer-column">
             <h3>Contact</h3>

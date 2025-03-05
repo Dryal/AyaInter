@@ -1,3 +1,54 @@
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#0090af ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+function showError() {
+  const emailInput = document.querySelector('.email-input');
+  const errorMessage = document.querySelector('.error-message');
+  
+  if (emailInput.value === "") {
+      errorMessage.style.display = "block"; // Show error if input is empty
+  } else {
+      errorMessage.style.display = "none"; // Hide error if input is not empty
+  }
+}
+document.addEventListener('DOMContentLoaded', function () {
+  const subscribeBtn = document.querySelector('.subscribe-btn');
+  const emailInput = document.querySelector('.email-input');
+  const popup = document.getElementById('error-popup');
+
+  subscribeBtn.addEventListener('click', function () {
+      if (emailInput.value.trim() === '') {
+          alert('Veuillez entrer un email valide.');
+          return;
+      }
+      emailInput.value = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      popup.classList.add('show');
+
+      setTimeout(() => {
+          popup.classList.remove('show');
+      }, 3500); // Hide after 3 seconds
+  });
+});
+
 function toggleCustoms(event) {
   event.preventDefault();
   let dropdown = document.querySelector(".customs-dropdown");
@@ -19,43 +70,25 @@ function toggleCustoms(event) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const checkboxes = [document.getElementById('theme-toggle'), document.getElementById('switch')]; 
+  const checkboxes = [document.getElementById('theme-toggle'), document.getElementById('switch')].filter(Boolean);
   const body = document.body;
 
-  // Function to apply the saved theme from localStorage
-  const applySavedTheme = () => {
-    const savedTheme = localStorage.getItem('theme'); // Retrieve the theme from localStorage
+  const getCurrentTheme = () => localStorage.getItem('theme') || 'light';
 
-    // If the theme is saved as 'dark', apply the dark theme
-    if (savedTheme === 'dark') {
-      body.classList.add('dark-theme');
-      checkboxes.forEach(checkbox => checkbox.checked = true); // Ensure the checkboxes are checked
-    } else {
-      body.classList.remove('dark-theme'); // Remove dark theme if it's not saved
-      checkboxes.forEach(checkbox => checkbox.checked = false); // Ensure the checkboxes are unchecked
-    }
+  const applyTheme = (theme) => {
+    body.classList.toggle('dark-theme', theme === 'dark');
+    checkboxes.forEach(checkbox => checkbox.checked = (theme === 'dark'));
+    localStorage.setItem('theme', theme);
   };
 
-  // Function to toggle the theme and store the setting in localStorage
   const toggleTheme = () => {
-    if (checkboxes.some(checkbox => checkbox.checked)) {
-      body.classList.add('dark-theme');
-      localStorage.setItem('theme', 'dark'); // Save 'dark' in localStorage
-    } else {
-      body.classList.remove('dark-theme');
-      localStorage.setItem('theme', 'light'); // Save 'light' in localStorage
-    }
+    const newTheme = body.classList.contains('dark-theme') ? 'light' : 'dark';
+    applyTheme(newTheme);
   };
-
-  // Apply the saved theme when the page is loaded
-  applySavedTheme();
-
-  // Add event listeners to both checkboxes
-  checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', toggleTheme);
-  });
+  applyTheme(getCurrentTheme());
+  checkboxes.forEach(checkbox => checkbox.addEventListener('change', toggleTheme));
 });
-document.addEventListener('DOMContentLoaded', function () {
+
   const stats = document.querySelectorAll('.dryal-stat2 h3');
 
   stats.forEach(function (stat) {
@@ -70,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, speed);
   });
-});
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.classList.add('active');
