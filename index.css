@@ -3980,7 +3980,6 @@ QUI NOUS SOMMES
 .FAQ-ar,
 .presidentmessage-ar,
 .contact-ar{
-  
  .navbar{
   flex-direction: row-reverse;
 }
@@ -4341,5 +4340,16 @@ QUI NOUS SOMMES
   }
   #progress-value {
     background-color: #00262f;
+  }
+}
+.contact1{
+  align-items: start;
+}
+.dark-theme .contact-right h2{
+  color: #d5f1a1;
+}
+@media (max-width:900px){
+  .contact1{
+      align-items: center;
   }
 }
