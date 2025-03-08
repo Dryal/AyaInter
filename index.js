@@ -1,3 +1,12 @@
+function updateSidebarHeight() {
+  const sidebar = document.querySelector('.sidebar');
+  // Set the sidebar height to the actual viewport height
+  sidebar.style.height = `${window.innerHeight}px`;
+}
+
+// Call the function on load and resize
+window.addEventListener('load', updateSidebarHeight);
+window.addEventListener('resize', updateSidebarHeight);
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
