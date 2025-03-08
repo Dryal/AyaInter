@@ -1,9 +1,23 @@
 function updateSidebarHeight() {
   const sidebar = document.querySelector('.sidebar');
-  // Set the sidebar height to the actual viewport height
   sidebar.style.height = `${window.innerHeight}px`;
 }
+let updateInterval;
 
+window.addEventListener('scroll', () => {
+  clearInterval(updateInterval);
+  
+  updateInterval = setInterval(() => {
+    updateSidebarHeight(); 
+  }, 5);
+});
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    clearInterval(updateInterval); 
+  }, 200); 
+});
 // Call the function on load and resize
 window.addEventListener('load', updateSidebarHeight);
 window.addEventListener('resize', updateSidebarHeight);
