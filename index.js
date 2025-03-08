@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
   
   updateInterval = setInterval(() => {
     updateSidebarHeight(); 
-  }, 5);
+  }, 1);
 });
 let scrollTimeout;
 window.addEventListener('scroll', () => {

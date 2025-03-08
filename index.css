@@ -4341,6 +4341,13 @@ QUI NOUS SOMMES
   color: #0090af;
   z-index: 10000;
 }
+.progress-icon{
+  width: 12px; /* Adjust the size of the image */
+  height: 12px; /* Keep the aspect ratio */
+  transform: rotate(270deg); /* Rotate the image */
+  filter: invert(36%) sepia(95%) saturate(1645%) hue-rotate(163deg) brightness(89%) contrast(101%);
+  align-self: center;
+}
 .dark-theme{
   #progress span{
     color: #00acc1;
@@ -4359,7 +4366,4 @@ QUI NOUS SOMMES
   .contact1{
       align-items: center;
   }
-}
-.sidebar, .eerr3, .mobiletheme {
-  border: 2px solid red; /* Helps you see which part is stretching */
 }
