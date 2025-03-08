@@ -419,10 +419,11 @@ display: flex;
   margin-bottom: 0; /* Ensure it's not being pushed by any extra space */
 }
 .eerr3{
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  max-height: calc(100vh - 60px); /* Adjust this if needed */
+  flex-grow: 0; /* Prevents it from taking extra height */
+  max-height: calc(100vh - 60px); /* Account for the header or any padding above */
+  overflow: hidden; /* Allows scrolling if content overflows */
 }
 .sidebar ul{
   margin-top: 0px;
