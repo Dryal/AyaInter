@@ -415,7 +415,8 @@ display: flex;
   border-bottom: 1px solid;
   border-image-source: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   border-image-slice: 3;
-  margin-top: auto; /* Pushes it to the bottom */
+  margin-top: auto; /* Pushed to the bottom */
+  margin-bottom: 0; /* Ensure it's not being pushed by any extra space */
 }
 .eerr3{
   flex-grow: 1;
@@ -522,12 +523,12 @@ display: flex;
     display: flex;
     flex-direction: column;
     z-index: 1000;
-    overflow-y: hidden; /* Disable internal scrolling */
+    overflow: hidden; /* Disable internal scrolling */
     max-height: 100vh;
     opacity: 0;
     transform: translateX(-100%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap:0px;
   }
   .sidebar.active {
@@ -4357,4 +4358,7 @@ QUI NOUS SOMMES
   .contact1{
       align-items: center;
   }
+}
+.sidebar, .eerr3, .mobiletheme {
+  border: 2px solid red; /* Helps you see which part is stretching */
 }
